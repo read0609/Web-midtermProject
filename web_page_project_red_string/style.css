@@ -150,12 +150,17 @@ footer a{
   margin-left: -130px;
 }
 
-.mid_finger:hover .content1,.target:hover .content2,.club_intro:hover .content3,.org_intro:hover .content4{
+
+.mid_finger:hover .content1,.target:hover .content2,.club_intro:hover .content3,.org_intro:hover .content4,
+.sup1:hover .sup1_data,.sup2:hover .sup2_data,.sup3:hover .sup3_data,.sup4:hover .sup4_data,
+.sup5:hover .sup5_data,.sup6:hover .sup6_data,.sup7:hover .sup7_data,.sup8:hover .sup8_data,.sup9:hover .sup9_data{
   opacity: 1;
   visibility:visible;
 }
 
-.content1,.content2,.content3,.content4{
+.content1,.content2,.content3,.content4,
+.sup1_data,.sup2_data,.sup3_data,.sup4_data,.sup5_data,
+.sup6_data,.sup7_data,.sup8_data,.sup9_data{
   height: 300px;
   width: 100%;
   background-color: #333;
@@ -167,11 +172,67 @@ footer a{
   overflow: hidden;
   border-radius: 10px;
 }
-.content1 p,.content2 p,.content3 p,.content4 p{
+.content1 p,.content2 p,.content3 p,.content4 p,
+.sup1_data p,.sup2_data p,.sup3_data p,.sup4_data p,.sup5_data p,
+.sup6_data p,.sup7_data p,.sup8_data p,.sup9_data p{
   padding: 0px;
   margin: 30px;
   font-size:14px;
   color:white;
   line-height: 30px;
   letter-spacing: 2px;
+}
+
+
+.sup1,.sup2,.sup3,.sup4,.sup5,.sup6,.sup7,.sup8,.sup9{
+  width: 100%;
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.sup1{
+    background-image: url("image/sup1.png");
+    background-size: 80% 70%;
+}
+.sup2{
+    background-image: url("image/sup2.png");
+    background-size: 80% 70%;
+}
+.sup3{
+    background-image: url("image/sup3.png");
+    background-size: 70% 80%;
+}
+.sup4{
+    background-image: url("image/sup4.png");
+    background-size: 70% 75%;
+}
+.sup5{
+    background-image: url("image/sup5.png");
+    background-size: 70% 75%;
+}
+.sup6{
+    background-image: url("image/sup6.png");
+    background-size: 70% 75%;
+}
+.sup7{
+    background-image: url("image/sup7.png");
+    background-size: 75% 25%;
+    background-position: center 95px;
+
+}
+.sup8{
+    background-image: url("image/sup8.png");
+    background-size: 80% 70%;
+    background-position: center 15px;
+
+}
+.sup9{
+    background-image: url("image/sup9.png");
+    background-size: 75% 80%;
+}
+.sup1_data p{
+    margin-top: 50px;
+    font-size: 15px;
 }
