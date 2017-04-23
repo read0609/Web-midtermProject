@@ -11,13 +11,16 @@ ul, li, a, div,p{
 body,footer{
   margin: 0px;
   padding: 0px;
+  font-family: 微軟正黑體;
 }
 .row{
   width:100%;
-  margin-right: -40px;
+  margin-right: -20px;
 }
 .col{
-  padding-right: 40px;
+
+  padding-left:  20px;
+  padding-right: 20px;
   float:left;
 }
 .col-sm-11{width:91.662%;}
@@ -49,7 +52,7 @@ body,footer{
 h1{
   display:inline-block;
   float:left;
-  color:#FFF;
+  color:#EEE;
   font-family: Microsoft JhengHei;
   margin-top:28px;
   margin-left: 50px;
@@ -63,7 +66,7 @@ h1{
 }
 .nav a{
     text-decoration: none;
-    color:#FFF;
+    color:#EEE;
     font-weight: bolder;
     font-size:14px;
 }
@@ -84,19 +87,19 @@ footer{
   margin-top:0px;
 }
 footer p{
-  color:#FFF;
+  color:#EEE;
   display: inline-block;
   margin-right: 10px;
   font-size: 15px;
 }
 footer a{
-  color:#FFF;
+  color:#EEE;
   text-decoration: none;
   font-size: 18px;
   margin-top: -30px;
 }
 .line2{
-  border-left:solid 1px #FFF;
+  border-left:solid 1px #EEE;
   height: 13px;
   display: inline-block;
   margin-right: 10px;
@@ -113,55 +116,98 @@ footer a{
   margin-top: 30px;
 }
 .share {
-
   display: inline-block;
   margin-left: 400px;
   margin-top: 25px;
+  cursor: pointer;
 
 }
 .share img{
   width: 40px;
   height: auto;
 }
+.share_icons{
+  width:150px;
+  background-color: #333;
+  display: inline-block;
+  border-radius: 10px;
+  opacity: 0;
+  margin-left: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  -visibility: visible;
+}
+/*.share:hover ~ .share_icons{
+  opacity: 1;
+  -visibility: visible;
+}*/
+.share_icons_display{
+  opacity: 1;
+}
+
+.share_icons li{
+  display: inline-block;
+  margin-right: -90px;
+
+}
+.share_icons img{
+  width: 25%;
+  height:auto;
+
+}
 /*---------------------------------------------------------*/
 
 /*--關於赤弦-與-贊助廠商-------------------------------------------------*/
-.mid_finger,.target,.club_intro,.org_intro{
+.about{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+  overflow: auto;
+}
+
+.about .col{
+  display: inline-block;
+}
+.square{
   background-color: #ffe6e6;
   height: 300px;
-  padding-left: 50%;
-  padding-top: 50%;
   margin-top:50px;
   position: relative;
-  border-radius: 10px;
-}
-.fake{
-  height: 300px;
-  padding-left: 50%;
-  padding-top: 50%;
-  margin-top:50px;
-}
-.mid_finger p,.target p{
-  font-size: 72px;
-  margin-top:-140px;
-  margin-left: -70px;
-
-}
-.club_intro p,.org_intro p{
-  font-size: 72px;
-  margin-top:-140px;
-  margin-left: -130px;
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 }
 
+.square h3{
+  display: inline-block;
+  font-size: 60px;
+}
 
-.mid_finger:hover .content1,.target:hover .content2,.club_intro:hover .content3,.org_intro:hover .content4,
-.sup1:hover .sup1_data,.sup2:hover .sup2_data,.sup3:hover .sup3_data,.sup4:hover .sup4_data,
-.sup5:hover .sup5_data,.sup6:hover .sup6_data,.sup7:hover .sup7_data,.sup8:hover .sup8_data,.sup9:hover .sup9_data{
+.square:hover .content{
   opacity: 1;
   visibility:visible;
 }
 
-.content1,.content2,.content3,.content4,
+.about_main{
+  overflow:auto;
+  margin-bottom: 40px;
+}
+
+.nine_pic{
+  margin-top: 50px;
+}
+
+
+
+.sup1:hover .sup1_data,.sup2:hover .sup2_data,.sup3:hover .sup3_data,.sup4:hover .sup4_data,
+.sup5:hover .sup5_data,.sup6:hover .sup6_data,.sup7:hover .sup7_data,.sup8:hover .sup8_data,.sup9:hover .sup9_data{
+  opacity: 0.9;
+  visibility:visible;
+}
+
+.content,
 .sup1_data,.sup2_data,.sup3_data,.sup4_data,.sup5_data,
 .sup6_data,.sup7_data,.sup8_data,.sup9_data{
   height: 300px;
@@ -175,7 +221,7 @@ footer a{
   overflow: hidden;
   border-radius: 10px;
 }
-.content1 p,.content2 p,.content3 p,.content4 p,
+.content p,
 .sup1_data p,.sup2_data p,.sup3_data p,.sup4_data p,.sup5_data p,
 .sup6_data p,.sup7_data p,.sup8_data p,.sup9_data p{
   padding: 0px;
