@@ -178,8 +178,8 @@ img.share_btn{
   display: inline-block;
 }
 .square{
-  background-color: #ffe6e6;
-  height: 400px;
+  -background-color: #ffe6e6;
+  height: 300px;
   margin-top:50px;
   position: relative;
   border-radius: 5px;
@@ -191,11 +191,24 @@ img.share_btn{
 .square h3{
   display: inline-block;
   font-size: 60px;
+  z-index: 15;
+  color: #FFF;
 }
 
 .square:hover .content{
-  opacity: 1;
+  opacity: 0.9;
   visibility:visible;
+  z-index: 20;
+}
+
+.about_img{
+  width:100%;
+  height: auto;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 10;
+  border-radius: 5px;
 }
 
 .about_main{
