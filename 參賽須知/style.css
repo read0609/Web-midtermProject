@@ -89,7 +89,7 @@ h1{
   width: 600px;
 }
 
-.Network_registration,.Onsite_registration{
+.Registration_window .Network_registration,.Registration_window .Onsite_registration{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -173,16 +173,71 @@ h1{
   display: none;
 }
 
+.otherIntro{
+  width: 100%;
+  height: 450px;
+  padding:20px 8vw 20px 8vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.equipmentIntro ,.checkIntro ,.scoreIntro{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  width:300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 2px solid #000;
+  text-align: center;
+  margin: auto;
+}
+
+/*.equipmentIntro{
+  width:150px;
+  height: 450px;
+
+}
+
+.checkIntro{
+  display: none;
+}
+
+.scoreIntro{
+  display:none;
+}*/
+
+/*.equipmentIntro ,.checkIntro ,.scoreIntro{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  width:300px;
+  height: 300px;
+  border: 2px solid #000;
+  text-align: center;
+  margin: auto;
+}*/
+
+.otherIntro .text_equipmentIntro,.otherIntro .text_checkIntro,.otherIntro .text_scoreIntro{
+  display: none;
+}
+
+/*.otherIntro .text_equipmentIntro{
+  display: block;
+  height: 450px;
+}*/
 
 
 
 footer{
   clear: both;
   background-color: #000;
-  max-width: auto;
+  max-width: 100%;
   height:80px;
-  margin-top:750px;
 }
 footer p{
   color:#FFF;
