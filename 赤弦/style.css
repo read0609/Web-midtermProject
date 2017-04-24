@@ -263,7 +263,7 @@ footer p{
 }
 .a_i{
   width: 100%;
-  height: 270px;
+  height: 300px;
 }
 .a_5{
   width: 100%;
@@ -275,6 +275,10 @@ footer p{
   font-family: Microsoft JhengHei;
   text-align: center;
   color:	#003377;
+}
+.a_i_img{
+  display:block;
+  margin: auto;
 }
 .a_i h3{
   text-align: center;
