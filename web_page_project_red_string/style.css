@@ -13,9 +13,15 @@ body,footer{
   padding: 0px;
   font-family: 微軟正黑體;
 }
+.container{
+  max-width: 1170px;
+  margin:0 auto;
+  overflow: auto;
+}
 .row{
   width:100%;
   margin-right: -20px;
+  margin: 0 auto;
 }
 .col{
 
@@ -119,22 +125,25 @@ footer a{
   display: inline-block;
   margin-left: 400px;
   margin-top: 25px;
-  cursor: pointer;
 
+  height: auto;
 }
 .share img{
   width: 40px;
   height: auto;
+  display: inline-block;
+}
+img.share_btn{
+  cursor: pointer;
 }
 .share_icons{
-  width:150px;
-  background-color: #333;
+  padding: 5px 20px;
+  background-color: #ddd;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 0;
-  margin-left: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
+  text-align:center;
+  vertical-align: top;
   -visibility: visible;
 }
 /*.share:hover ~ .share_icons{
@@ -146,13 +155,13 @@ footer a{
 }
 
 .share_icons li{
-  display: inline-block;
-  margin-right: -90px;
-
+  display: inline;
+  width: auto;
 }
 .share_icons img{
-  width: 25%;
+  width: 30px;
   height:auto;
+  margin: 0 5px;
 
 }
 /*---------------------------------------------------------*/
@@ -210,7 +219,7 @@ footer a{
 .content,
 .sup1_data,.sup2_data,.sup3_data,.sup4_data,.sup5_data,
 .sup6_data,.sup7_data,.sup8_data,.sup9_data{
-  height: 300px;
+  height: 100%;
   width: 100%;
   background-color: #333;
   position: absolute;
@@ -237,49 +246,49 @@ footer a{
   width: 100%;
   position: relative;
   height: 400px;
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: top;
 }
 .sup1{
     background-image: url("image/sup1.png");
-    background-size: 80% 70%;
+
 }
 .sup2{
     background-image: url("image/sup2.png");
-    background-size: 80% 70%;
+    background-size: 80%;
 }
 .sup3{
     background-image: url("image/sup3.png");
-    background-size: 70% 80%;
+    background-size: 70%;
 }
 .sup4{
     background-image: url("image/sup4.png");
-    background-size: 70% 75%;
+    background-size: 70%;
 }
 .sup5{
     background-image: url("image/sup5.png");
-    background-size: 70% 75%;
+    background-size: 70%;
 }
 .sup6{
     background-image: url("image/sup6.png");
-    background-size: 70% 75%;
+    background-size: 70%;
 }
 .sup7{
     background-image: url("image/sup7.png");
-    background-size: 75% 25%;
+    background-size: 75%;
     background-position: center 95px;
 
 }
 .sup8{
     background-image: url("image/sup8.png");
-    background-size: 80% 70%;
+    background-size: 80%;
     background-position: center 15px;
 
 }
 .sup9{
     background-image: url("image/sup9.png");
-    background-size: 75% 80%;
+    background-size: 75%;
 }
 .sup1_data p{
     margin-top: 50px;
