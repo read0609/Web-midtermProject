@@ -32,7 +32,10 @@ body,footer{
 .nav{
   overflow:auto;
 }
-
+h1 a{
+  text-decoration: none;
+  color:#EEE;
+}
 h1{
   display:inline-block;
   float:left;
@@ -40,6 +43,7 @@ h1{
   font-family: Microsoft JhengHei;
   margin-top:28px;
 }
+
 .nav ul li{
   display:inline-block;
   float:right;
