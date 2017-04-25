@@ -3,10 +3,12 @@
 <head>
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.2.1.min.js"></script>
   <meta charset="UTF-8">
 </head>
 <body>
   <div class="header">
+      <div class="container">
   <h1>赤弦獎-紅樓琴緣歌唱比賽</h1>
   <div class="nav">
     <ul>
@@ -18,9 +20,20 @@
       <li><a href="index_support.html">贊助廠商</a></li>
   </div><!--nav-->
   </div><!--header-->
-
+</div>
   <div class="majorPic">
   </div><!--majorPic-->
+
+  <div class="insert">
+        <div class="insert_text">
+          <h2>贊助廠商</h2>
+          <p>藉由貴廠商(企業機構)的支持與給予我們社團此活動的贊助，將此次活動辦得相當成功，任何可以幫助到我們的贊助（經費、獎
+            <br>品、活動用上之軟硬體……等等），我們都由衷中的感謝,我們必定竭盡所能，
+            <br>滿足貴企業之需求，使宣傳效益最大化， 以達雙贏的成效！</p>
+        </div>
+  </div>
+  <img class="insert_image" src="image/su.jpg" alt="su" width="650px" height="300px">
+
 
   <div class="container">
   <div class="nine_pic">
@@ -101,14 +114,25 @@
   </div><!--row-->
 </div><!--nine_pic-->
 </div><!--container-->
+
   <footer>
+      <div class="container">
     <div class="footerLeft">
       <p><a href="#">↑ top</a></p>
       <div class="line2"></div>
       <p><a href="#">home></a></p>
     </div><!--footerLeft-->
-    <div class="share"><img src="image/share1.png"/></div>
+    <div class="share">
+      <img class="share_btn" src="image/share1.png" />
+      <ul class="share_icons">
+          <li><img src="image/FB.png"></li>
+          <li><img src="image/IG.png"></li>
+          <li><img src="image/g.png"></li>
+      </ul>
+    </div>
     <div class="small"><p>©2017赤弦獎</p></div>
+  </div>
   </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

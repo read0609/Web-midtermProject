@@ -15,28 +15,28 @@ header{
   top: 0px;
   z-index: 1000;
 }
-header h1{
-  margin: 0px;
-}
-.h{
-  display: inline-block;
-  float: left;
-  color: white;
+.container h1{
+  display:inline-block;
+  float:left;
+  color:#EEE;
   font-family: Microsoft JhengHei;
-  margin-top: 28px;
-  margin-left: 50px;
-}
-.h a{
+  margin-top:28px;
   text-decoration: none;
-  color: white;
 }
+.container{
+  max-width: 1170px;
+  overflow: auto;
+  justify-content: space-around;
+  margin:0 auto;
+}
+
 .main{
   height: 700px;
   width: 100%;
   background-size: cover;
   position:inherit;
 }
-.container{
+.container123{
   box-sizing: border-box;
   width: 100%;
   margin: auto;
@@ -209,48 +209,81 @@ header h1{
 }
 footer{
   clear: both;
-  background-color: black;
-  max-width:auto;
-  height: 80px;
-  Xmargin-top: 750px;
-}
-.footerleft{
-  margin-left: 200px;
-  float: left;
-  display: inline-block;
-  margin-top: 30px;
-}
-footer a{
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: -30px;
+  background-color: #000;
+  max-width: auto;
+  height:80px;
+  margin-top:20px;
 }
 footer p{
-  color: white;
+  color:#EEE;
   display: inline-block;
   margin-right: 10px;
   font-size: 15px;
 }
+footer a{
+  color:#EEE;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: -30px;
+}
 .line2{
-  border-left: white solid 1px;
+  border-left:solid 1px #EEE;
   height: 13px;
   display: inline-block;
   margin-right: 10px;
 }
-.share{
+.small{
+  float:right;
+  margin-top: 35px;
+}
+.footerLeft{
+
+  float: left;
+  display: inline-block;
+  margin-top: 30px;
+}
+.share {
   display: inline-block;
   margin-left: 400px;
   margin-top: 25px;
+
+  height: auto;
 }
 .share img{
   width: 40px;
   height: auto;
+  display: inline-block;
 }
-.small{
-  float: right;
-  margin-right: 70px;
-  margin-top: 35px;
+img.share_btn{
+  cursor: pointer;
+}
+.share_icons{
+  padding: 5px 20px;
+  background-color: #ddd;
+  display: inline-block;
+  border-radius: 5px;
+  opacity: 0;
+  text-align:center;
+  vertical-align: top;
+  -visibility: visible;
+}
+/*.share:hover ~ .share_icons{
+  opacity: 1;
+  -visibility: visible;
+}*/
+.share_icons_display{
+  opacity: 1;
+}
+
+.share_icons li{
+  display: inline;
+  width: auto;
+}
+.share_icons img{
+  width: 30px;
+  height:auto;
+  margin: 0 5px;
+
 }
 *{
   Xborder: 1px solid black;
@@ -263,7 +296,7 @@ footer p{
 }
 .a_i{
   width: 100%;
-  height: 270px;
+  height: 300px;
 }
 .a_5{
   width: 100%;
@@ -275,6 +308,10 @@ footer p{
   font-family: Microsoft JhengHei;
   text-align: center;
   color:	#003377;
+}
+.a_i_img{
+  display:block;
+  margin: auto;
 }
 .a_i h3{
   text-align: center;
