@@ -118,22 +118,6 @@ h1{
   display:none;
 }
 
-/*.Network_registration:hover, .Onsite_registration:hover{
-  width: 110px;
-  height: 110px;
-  padding: 0 10px;
-  border:5pt solid #786;
-  //word-wrap: break-word;
-}*/
-
-/*.Network_registration:hover ~ .Onsite_registration, .Onsite_registration:hover ~ .Network_registration{
-  display: none;
-}
-
-.Network_registration:hover ~ .Network_text, .Onsite_registration:hover ~ .Onsite_text{
-  display:block;
-}*/
-
 .Registration .Note{
   text-align: left;
   width:550px;
@@ -217,20 +201,6 @@ h1{
   padding: 0 60px;
 }
 
-/*#scoreIntro{
-  width:150px;
-  height: 300px;
-  border-radius: 0;
-}
-
-#equipmentIntro{
-  display: none;
-}
-
-#checkIntro{
-  display:none;
-}*/
-
 #otherIntro #text_equipmentIntro,#otherIntro #text_checkIntro,#otherIntro #text_scoreIntro{
   display: none;
   height: 300px;
@@ -241,12 +211,6 @@ h1{
   padding: 0 30px;
   border:2px solid #000;
 }
-
-/*#otherIntro #text_scoreIntro{
-  display: block;
-}*/
-
-
 
 footer{
   clear: both;
