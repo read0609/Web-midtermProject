@@ -2,8 +2,15 @@
   box-sizing: border-box;
 }
 
-body{
-	margin:auto;
+ul, li, a, div,p{
+  padding: 0px;
+  margin: 0px;
+}
+
+body,footer{
+  margin: 0px;
+  padding: 0px;
+  font-family: 微軟正黑體;
 }
 .header{
   background-color: #000;
@@ -32,7 +39,7 @@ h1{
   font-family: Arial;
   margin-top: 40px;
   margin-left : 40px;
-  text-align: center;
+
 }
 .nav a{
     text-decoration: none;
