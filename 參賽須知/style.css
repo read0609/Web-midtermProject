@@ -66,7 +66,7 @@ h1{
   justify-content: space-between;
 }
 
-.Registration_reciprocal{
+#Registration_reciprocal{
   height: 200px;
   width:500px;
   background-color: #99FF99;
@@ -81,12 +81,13 @@ h1{
   height: 200px;
 }
 
-.Registration_window{
+#Registration_window{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 700px;
+  height: 110px;
 }
 
 #Network_registration,#Onsite_registration{
@@ -177,12 +178,12 @@ h1{
   text-align: center;
 }
 
-.Group_intr h2{
+#hexagon #mid_squre .Group_intr h2{
   font-size: 50px;
   margin: 30px 0;
 }
 
-.Group_intr p{
+#hexagon #mid_squre .Group_intr p{
   font-size: 30px;
 }
 
@@ -196,7 +197,7 @@ h1{
   align-items: center;
 }
 
-.equipmentIntro ,.checkIntro ,.scoreIntro{
+#equipmentIntro ,#checkIntro ,#scoreIntro{
   display: flex;
   align-items: center;
   justify-content:center;
@@ -206,38 +207,38 @@ h1{
   border-radius: 150px;
   border: 2px solid #000;
   text-align: center;
+  margin: 0 auto;
   padding: 0 60px;
 }
 
-.scoreIntro{
+/*#scoreIntro{
   width:150px;
   height: 300px;
   border-radius: 0;
 }
 
-.equipmentIntro{
+#equipmentIntro{
   display: none;
 }
 
-.checkIntro{
+#checkIntro{
   display:none;
-}
+}*/
 
-.otherIntro .text_equipmentIntro,.otherIntro .text_checkIntro,.otherIntro .text_scoreIntro{
+.otherIntro #text_equipmentIntro,.otherIntro #text_checkIntro,.otherIntro #text_scoreIntro{
   display: none;
-}
-
-.otherIntro .text_scoreIntro{
-  display: block;
   height: 300px;
   width:80%;
   line-height: 45px;
-  display: flex;
   align-items: center;
   justify-content:flex-start;
   padding: 0 30px;
   border:2px solid #000;
 }
+
+/*#otherIntro #text_scoreIntro{
+  display: block;
+}*/
 
 
 
