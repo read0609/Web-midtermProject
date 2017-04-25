@@ -5,23 +5,40 @@
 body{
 	margin:auto;
 }
-header{
-  background-color: black;
-  width: 100%;
-  height: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+.header{
+  background-color: #000;
+  width:100%;
+  height:100px;
   position: fixed;
-  top: 0px;
+  top:0px;
   z-index: 1000;
+  overflow: auto;
+
 }
-.container h1{
+.nav{
+  overflow:auto;
+}
+
+h1{
   display:inline-block;
   float:left;
   color:#EEE;
   font-family: Microsoft JhengHei;
   margin-top:28px;
-  text-decoration: none;
+}
+.nav ul li{
+  display:inline-block;
+  float:right;
+  font-family: Arial;
+  margin-top: 40px;
+  margin-left : 40px;
+  text-align: center;
+}
+.nav a{
+    text-decoration: none;
+    color:#EEE;
+    font-weight: bolder;
+    font-size:14px;
 }
 .container{
   max-width: 1170px;
@@ -44,7 +61,7 @@ header{
 .p_1{
   width: 100%;
   height: 450px;
-  background-image: url("img/a_2.png");
+  background-image: url("image/a_2.png");
 }
 .p_1_l{
   display: inline-block;
@@ -89,7 +106,7 @@ header{
 .p_2{
   width: 100%;
   height: 500px;
-  background-image: url("img/a_3.png");
+  background-image: url("image/a_3.png");
   background-size: cover;
   margin: 0px;
   overflow: auto;
