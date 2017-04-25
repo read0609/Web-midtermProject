@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.min.js"></script>
     <script src="InforPart.js"></script>
     <title>參賽須知｜赤弦獎</title>
   </head>
   <body>
     <div class="header">
+    <div class="container">
     <h1>赤弦獎-紅樓琴緣歌唱比賽</h1>
     <div class="nav">
       <ul>
         <li><a href="#">最新消息</a></li>
         <li><a href="#">參賽須知</a></li>
-        <li><a href="#">關於赤弦</a></li>
-        <li><a href="#">歷年回顧</a></li>
+        <li><a href="index_about.html">關於赤弦</a></li>
+        <li><a href="index_review.html">歷年回顧</a></li>
         <li><a href="#">聯絡我們</a></li>
-        <li><a href="#">贊助廠商</a></li>
+        <li><a href="index_support.html">贊助廠商</a></li>
     </div><!--nav-->
     </div><!--header-->
+  </div>
 
     <div class="majorPic">
     </div><!--majorPic-->
@@ -155,14 +158,25 @@
     </div>
 
     <footer>
+    <div class="container">
       <div class="footerLeft">
         <p><a href="#">↑ top</a></p>
         <div class="line2"></div>
         <p><a href="#">home></a></p>
       </div><!--footerLeft-->
-      <div class="share"><img src="image/share1.png"/></div>
+      <div class="share">
+        <img class="share_btn" src="image/share1.png" />
+        <ul class="share_icons">
+            <li><img src="image/FB.png"></li>
+            <li><img src="image/IG.png"></li>
+
+            <li><img src="image/g.png"></li>
+        </ul>
+      </div>
       <div class="small"><p>©2017赤弦獎</p></div>
+  </div>
     </footer>
 
   </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
