@@ -76,43 +76,49 @@ window.onload = function() {
   var checkText = document.getElementById("text_checkIntro");
   var otherIntro = document.getElementById("otherIntro");
   var scoTTouch = false,
+    scoIntrTouch = false,
     equipTTouch = false,
     checkTTouch = false;
 
-  scoIntr.addEventListener("mouseover", function() {
+  scoIntr.addEventListener("mousemove", function() {
     scoIntr.style.width = "150px";
     scoIntr.style.borderRadius = "0";
     scoText.style.display = "flex";
     equipIntr.style.display = "none";
     checkIntr.style.display = "none";
-  });
-
-  scoText.addEventListener("mouseover", function() {
+    scoIntrTouch = true;
     scoTTouch = true;
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
   });
 
   scoText.addEventListener("mouseout", function() {
+    //alert("scoIntrTouch:" + scoIntrTouch);
+    if (!scoIntrTouch) {
+      scoIntr.style.width = "300px";
+      scoIntr.style.borderRadius = "150px";
+      scoText.style.display = "none";
+      checkIntr.style.display = "flex";
+      equipIntr.style.display = "flex";
+    }
     scoTTouch = false;
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
+  });
+
+  scoText.addEventListener("mousemove", function() {
+    //alert("scoText move!!");
+    scoTTouch = true;
   });
 
   scoIntr.addEventListener("mouseout", function() {
+    //alert("scoTTouch:" + scoTTouch);
     if (!scoTTouch) {
-      scoTTouch = true;
+      scoIntr.style.width = "300px";
+      scoIntr.style.borderRadius = "150px";
+      scoText.style.display = "none";
+      checkIntr.style.display = "flex";
+      equipIntr.style.display = "flex";
     }
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
+    scoIntrTouch = false;
+    //alert("scoIntrTouch:" + scoIntrTouch);
   });
-
-  function res(x, self, selfT, other) {
-    if (!x) {
-      self.style.width = "300px";
-      self.style.borderRadius = "150px";
-      selfT.style.display = "none";
-      other[0].style.display = "flex";
-      other[1].style.display = "flex";
-    }
-  }
 
   /*equipIntr.addEventListener("mouseover", function() {
     equipIntr.style.width = "150px";
