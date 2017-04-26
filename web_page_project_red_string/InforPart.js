@@ -1,166 +1,156 @@
-window.onload = function() {
+$(document).ready(function() {
   //Registration_reciprocal
-  //var document.getElementById("Registration_reciprocal");
+  //var reciprocal = $("Registration_reciprocal");
+  var startDay = new Date();
+  var endDay = new Date('2017/11/06 08:00');
+  var spantime = (endDay - startDay) / 1000;
+  var units = $(".unit");
+  $(this).everyTime('1s', function(i) {
+    spantime--;
+    var d = Math.floor(spantime / (24 * 3600));
+    var h = Math.floor((spantime % (24 * 3600)) / 3600);
+    var m = Math.floor((spantime % 3600) / (60));
+    var s = Math.floor(spantime % 60);
 
+    if (spantime > 0) {
+      units.eq(0).text(d);
+      units.eq(1).text(h);
+      units.eq(2).text(m);
+      units.eq(3).text(s);
+    } else { // 避免倒數變成負的
+      units.eq(0).text(0);
+      units.eq(1).text(0);
+      units.eq(2).text(0);
+      units.eq(3).text(0);
+    }
+  });
 
   //registration
-  var NetReg = document.getElementById("Network_registration");
-  var OnsiteReg = document.getElementById("Onsite_registration");
-  var NetText = document.getElementById("Network_text");
-  var OnsiteText = document.getElementById("Onsite_text");
-  var RegWin = document.getElementById("Registration_window");
-  var NetTTouch = false,
-    OnsiteTTouch = false;
+  var NetReg = $("#Network_registration");
+  var OnsiteReg = $("#Onsite_registration");
+  var NetText = $("#Network_text");
+  var OnsiteText = $("#Onsite_text");
+  var RegWin = $("#Registration_window");
+  var NetRegTouch = false;
+  OnsiteRegTouch = false;
 
-  NetReg.addEventListener("mouseover", function() {
-    NetReg.style.width = "110px";
-    NetReg.style.padding = "0 10px";
-    NetText.style.display = "block";
-    OnsiteReg.style.display = "none";
-    NetTTouch = true;
+  function HoverReg(self, selfT, other) {
+    self.css({
+      "width": "220px",
+      "padding": "0 10px"
+    });
+    selfT.css("display", "flex");
+    other.css("display", "none");
+  };
+
+  function ResetReg(Reset, self, selfT, other) {
+    if (Reset) {
+      self.css({
+        "width": "300px",
+        "padding": "0 60px 0 60px"
+      });
+      selfT.css("display", "none");
+      other.css("display", "flex");
+      Reset = false;
+    }
+    return Reset;
+  }
+
+  NetReg.mousemove(function() {
+    HoverReg(NetReg, NetText, OnsiteReg);
+    NetRegTouch = true;
   });
 
-  OnsiteReg.addEventListener("mouseover", function() {
-    NetReg.style.display = "none";
-    OnsiteReg.style.width = "110px";
-    OnsiteReg.style.padding = "0 10px";
-    OnsiteText.style.display = "block";
-    OnsiteTTouch = true;
+  OnsiteReg.mousemove(function() {
+    HoverReg(OnsiteReg, OnsiteText, NetReg);
+    OnsiteRegTouch = true;
   });
 
-  RegWin.addEventListener("mouseout", function() {
-    if (OnsiteTTouch) {
-      OnsiteReg.style.width = "200px";
-      OnsiteReg.style.padding = "0 60px 0 60px";
-      NetReg.style.display = "block";
-      OnsiteText.style.display = "none";
-      OnsiteTTouch = false;
-    }
-    if (NetTTouch) {
-      OnsiteReg.style.display = "block";
-      NetReg.style.width = "200px";
-      NetReg.style.padding = "0 60px 0 60px";
-      NetText.style.display = "none";
-      NetTTouch = false;
-    }
+  RegWin.mouseleave(function() {
+    NetRegTouch = ResetReg(NetRegTouch, NetReg, NetText, OnsiteReg);
+    OnsiteRegTouch = ResetReg(OnsiteRegTouch, OnsiteReg, OnsiteText, NetReg);
   });
 
   //Introduction
-  var lefTri = document.getElementById("left_Tri");
-  var rigTri = document.getElementById("right_Tri");
-  var GroupIntr = document.getElementsByClassName("Group_intr");
+  var lefTri = $("#left_Tri");
+  var rigTri = $("#right_Tri");
+  var GroupIntr = $(".Group_intr");
   var IndexIntr = 0;
-  GroupIntr[IndexIntr].style.display = "flex";
-  lefTri.addEventListener("click", function() {
-    GroupIntr[IndexIntr].style.display = "none";
+  GroupIntr.eq(IndexIntr).css("display", "flex");
+
+  lefTri.click(function() {
+    GroupIntr.eq(IndexIntr).css("display", "none");
     if (IndexIntr == 5) {
       IndexIntr = 0;
     } else IndexIntr++;
-    GroupIntr[IndexIntr].style.display = "flex";
+    GroupIntr.eq(IndexIntr).css("display", "flex");
   });
 
-  rigTri.addEventListener("click", function() {
-    GroupIntr[IndexIntr].style.display = "none";
+  rigTri.click(function() {
+    GroupIntr.eq(IndexIntr).css("display", "none");
     if (IndexIntr == 0) {
       IndexIntr = 5;
     } else IndexIntr--;
-    GroupIntr[IndexIntr].style.display = "flex";
+    GroupIntr.eq(IndexIntr).css("display", "flex");
   });
+
 
   //otherIntroduce
-  var scoIntr = document.getElementById("scoreIntro");
-  var equipIntr = document.getElementById("equipmentIntro");
-  var checkIntr = document.getElementById("checkIntro");
-  var scoText = document.getElementById("text_scoreIntro");
-  var equipText = document.getElementById("text_equipmentIntro");
-  var checkText = document.getElementById("text_checkIntro");
-  var otherIntro = document.getElementById("otherIntro");
-  var scoTTouch = false,
-    equipTTouch = false,
-    checkTTouch = false;
+  var scoIntr = $("#scoreIntro");
+  var equipIntr = $("#equipmentIntro");
+  var checkIntr = $("#checkIntro");
+  var scoText = $("#text_scoreIntro");
+  var equipText = $("#text_equipmentIntro");
+  var checkText = $("#text_checkIntro");
+  var otherIntro = $("#otherIntro");
+  var scoIntrTouch = false,
+    equipIntrTouch = false,
+    checkIntrTouch = false;
 
-  scoIntr.addEventListener("mouseover", function() {
-    scoIntr.style.width = "150px";
-    scoIntr.style.borderRadius = "0";
-    scoText.style.display = "flex";
-    equipIntr.style.display = "none";
-    checkIntr.style.display = "none";
-  });
-
-  scoText.addEventListener("mouseover", function() {
-    scoTTouch = true;
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
-  });
-
-  scoText.addEventListener("mouseout", function() {
-    scoTTouch = false;
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
-  });
-
-  scoIntr.addEventListener("mouseout", function() {
-    if (!scoTTouch) {
-      scoTTouch = true;
-    }
-    res(scoTTouch, scoText, scoText, [equipIntr, checkText]);
-  });
-
-  function res(x, self, selfT, other) {
-    if (!x) {
-      self.style.width = "300px";
-      self.style.borderRadius = "150px";
-      selfT.style.display = "none";
-      other[0].style.display = "flex";
-      other[1].style.display = "flex";
-    }
+  function HoverIntr(self, selfT, other) {
+    self.css({
+      "width": "150px",
+      "borderRadius": "0"
+    });
+    selfT.css("display", "flex");
+    other[0].css("display", "none");
+    other[1].css("display", "none");
   }
 
-  /*equipIntr.addEventListener("mouseover", function() {
-    equipIntr.style.width = "150px";
-    equipIntr.style.borderRadius = "0";
-    equipText.style.display = "flex";
-    scoIntr.style.display = "none";
-    checkIntr.style.display = "none";
-    equipTTouch = true;
+  function ResetIntr(Reset, self, selfT, other) {
+    if (Reset) {
+      self.css({
+        "width": "300px",
+        "borderRadius": "150px"
+      });
+      selfT.css("display", "none");
+      other[0].css("display", "flex");
+      other[1].css("display", "flex");
+      Reset = false;
+    }
+    return Reset;
+  }
+
+  scoIntr.mousemove(function() {
+    HoverIntr(scoIntr, scoText, [equipIntr, checkIntr]);
+    scoIntrTouch = true;
   });
 
-  checkIntr.addEventListener("mouseover", function() {
-    checkIntr.style.width = "150px";
-    checkIntr.style.borderRadius = "0";
-    checkText.style.display = "flex";
-    equipIntr.style.display = "none";
-    scoIntr.style.display = "none";
-    checkTTouch = true;
+  equipIntr.mousemove(function() {
+    HoverIntr(equipIntr, equipText, [scoIntr, checkIntr]);
+    equipIntrTouch = true;
   });
 
-  otherIntro.addEventListener("mouseout", function() {
-    if (scoTTouch) {
+  checkIntr.mousemove(function() {
+    HoverIntr(checkIntr, checkText, [equipIntr, scoIntr]);
+    checkIntrTouch = true;
+  });
+
+  otherIntro.mouseleave(function() {
+    scoIntrTouch = ResetIntr(scoIntrTouch, scoIntr, scoText, [equipIntr, checkIntr]);
+    equipIntrTouch = ResetIntr(equipIntrTouch, equipIntr, equipText, [scoIntr, checkIntr]);
+    checkIntrTouch = ResetIntr(checkIntrTouch, checkIntr, checkText, [equipIntr, scoIntr]);
+  });
 
 
-      scoIntr.style.width = "300px";
-      scoIntr.style.borderRadius = "150px";
-      scoText.style.display = "none";
-      equipIntr.style.display = "flex";
-      checkIntr.style.display = "flex";
-      scoTTouch = false;
-    }
-    if (equipTTouch) {
-      equipIntr.style.width = "300px";
-      equipIntr.style.borderRadius = "150px";
-      equipText.style.display = "none";
-      scoIntr.style.display = "flex";
-      checkIntr.style.display = "flex";
-      equipTTouch = false;
-    }
-    if (checkTTouch) {
-      checkIntr.style.width = "300px";
-      checkIntr.style.borderRadius = "150px";
-      checkText.style.display = "none";
-      equipIntr.style.display = "flex";
-      scoIntr.style.display = "flex";
-      checkTTouch = false;
-    }
-  });*/
-
-
-
-}
+});
