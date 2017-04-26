@@ -75,10 +75,23 @@ $(document).ready(function() {
   var lefTri = $("#left_Tri");
   var rigTri = $("#right_Tri");
   var GroupIntr = $(".Group_intr");
+  var changeL = $("#left_Tri p");
+  var changeR = $("#right_Tri p");
+  var he = $("#hexagon");
   var IndexIntr = 0;
   GroupIntr.eq(IndexIntr).css("display", "flex");
 
-  lefTri.click(function() {
+  GroupIntr.mousemove(function() {
+    changeL.css("visibility", "visible");
+    changeR.css("visibility", "visible");
+  });
+
+  /*he.mouseout(function() {
+    changeL.css("visibility", "hidden");
+    changeR.css("visibility", "hidden");
+  });*/
+
+  changeL.click(function() {
     GroupIntr.eq(IndexIntr).css("display", "none");
     if (IndexIntr == 5) {
       IndexIntr = 0;
@@ -86,7 +99,7 @@ $(document).ready(function() {
     GroupIntr.eq(IndexIntr).css("display", "flex");
   });
 
-  rigTri.click(function() {
+  changeR.click(function() {
     GroupIntr.eq(IndexIntr).css("display", "none");
     if (IndexIntr == 0) {
       IndexIntr = 5;
@@ -109,8 +122,9 @@ $(document).ready(function() {
 
   function HoverIntr(self, selfT, other) {
     self.css({
+      "font-size": "15px",
       "width": "150px",
-      "borderRadius": "0"
+      "borderRadius": "10px",
     });
     selfT.css("display", "flex");
     other[0].css("display", "none");
@@ -120,8 +134,9 @@ $(document).ready(function() {
   function ResetIntr(Reset, self, selfT, other) {
     if (Reset) {
       self.css({
+        "font-size": "25px",
         "width": "300px",
-        "borderRadius": "150px"
+        "borderRadius": "150px",
       });
       selfT.css("display", "none");
       other[0].css("display", "flex");

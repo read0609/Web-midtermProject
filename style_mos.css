@@ -153,6 +153,7 @@ h1{
   border: 2px solid #000;
   background-color: #000;
   color: #FFF;
+  font-size: 50px;
   font-family: Microsoft JhengHei;
 }
 
@@ -180,29 +181,31 @@ h1{
   align-items: center;
   box-sizing: border-box;
   cursor:default;
-  border:5pt solid #786;
-  border-radius: 10px;
+  border:5pt solid #FFF;
+  border-radius: 20px;
   width: 300px;
   height: 220px;
-  background-color: #EEFFBB;
+  background-color: #000;
 }
 
 #Registration_window h2{
-  color:#886600;
+  color:#EEE;
   font-family: 微軟正黑體;
 }
 
 #Network_text, #Onsite_text{
   display:none;
-  border-radius: 10px;
+  border-radius: 20px;
   width:400px;
   word-wrap: break-word;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 220px;
-  background-color: #FFFFBB;
-  border: 2pt solid #755;
+  color:#EEE;
+  padding: 0 20px;
+  background-color: #000;
+  border: 2pt solid #EEE;
 }
 
 .Registration .Note{
@@ -210,7 +213,7 @@ h1{
   width:700px;
   margin: 0 20px;
   box-sizing: border-box;
-  padding-left: 50px;
+  padding-left: 90px;
 }
 
 #hexagon{
@@ -225,25 +228,27 @@ h1{
   clear:both;
 }
 
-#hexagon #left_Tri{
-  float:left;
-  border-right: 200px solid 	#FFF7FF;
-  border-top: 250px solid transparent;
-  border-bottom: 250px solid transparent;
+#hexagon #left_Tri,#hexagon #right_Tri{
+  width: 15%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#hexagon #right_Tri{
-  float: left;
-  border-left: 200px solid 	#FFF7FF;
-  border-top: 250px solid transparent;
-  border-bottom: 250px solid transparent;
+#hexagon #left_Tri p,#hexagon #right_Tri p{
+  font-size: 100px;
+  font-family: Arial;
+  cursor: pointer;
 }
 
 #hexagon #mid_squre{
   float: left;
   width: 70%;
   height: 500px;
-  background-color: 	#FFF7FF;
+  background-color:#000;
+  border-radius: 20px;
+  border: 2pt solid #EEE;
 }
 
 #hexagon #mid_squre .Group_intr{
@@ -253,12 +258,14 @@ h1{
   flex-direction: column;
   margin: auto;
   text-align: center;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 #hexagon #mid_squre .Group_intr h2{
   font-size: 50px;
   font-family: Microsoft JhengHei;
-  color:#003377;
+  color:	#EEE;
   margin: 30px 0;
 }
 
@@ -271,11 +278,11 @@ h1{
 }
 
 #hexagon #mid_squre .Group_intr .content p{
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 45px;
+  color:#F0F0F0;
   font-family: 微軟正黑體;
 }
-
-
 
 #otherIntro{
   width: 100%;
@@ -297,8 +304,14 @@ h1{
   border-radius: 150px;
   border: 2px solid #000;
   text-align: center;
-  margin: 0 auto;
-  padding: 0 60px;
+  margin: 20px auto;
+  font-family: 微軟正黑體;
+  font-size: 25px;
+  padding: 30px 60px;
+}
+
+#otherIntro h2{
+  margin: 20px 0;
 }
 
 #otherIntro #text_equipmentIntro,#otherIntro #text_checkIntro,#otherIntro #text_scoreIntro{
