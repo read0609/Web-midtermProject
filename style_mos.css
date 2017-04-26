@@ -270,15 +270,16 @@ h1{
 #hexagon #mid_squre .Group_intr h2{
   font-size: 50px;
   font-family: Microsoft JhengHei;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 #hexagon #mid_squre .Group_intr .content{
   display: flex;
   width: 100%;
   height: 350px;
-  align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding-top: 8px;
 }
 
 #hexagon #mid_squre .Group_intr .content p{
@@ -320,8 +321,6 @@ h1{
 #scoreIntro{
   background-color: 	#CCFF99;
 }
-
-
 
 #otherIntro h2,#otherIntro h4{
   margin: 20px 0;
