@@ -2,7 +2,6 @@
   .border:solid 1px rgba(0,0,0,0.5);
   box-sizing: border-box;
   transition: all .5s;
-  font-family: 微軟正黑體;
 }
 ul, li, a, div,p,h2{
   padding: 0px;
@@ -228,14 +227,14 @@ h1{
 
 #hexagon #left_Tri{
   float:left;
-  border-right: 200px solid #6C6;
+  border-right: 200px solid 	#FFF7FF;
   border-top: 250px solid transparent;
   border-bottom: 250px solid transparent;
 }
 
 #hexagon #right_Tri{
   float: left;
-  border-left: 200px solid #6C6;
+  border-left: 200px solid 	#FFF7FF;
   border-top: 250px solid transparent;
   border-bottom: 250px solid transparent;
 }
@@ -244,7 +243,7 @@ h1{
   float: left;
   width: 70%;
   height: 500px;
-  background-color: #6C6;
+  background-color: 	#FFF7FF;
 }
 
 #hexagon #mid_squre .Group_intr{
@@ -258,19 +257,22 @@ h1{
 
 #hexagon #mid_squre .Group_intr h2{
   font-size: 50px;
+  font-family: Microsoft JhengHei;
+  color:#003377;
   margin: 30px 0;
 }
 
 #hexagon #mid_squre .Group_intr .content{
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 350px;
   align-items: center;
   justify-content: center;
 }
 
 #hexagon #mid_squre .Group_intr .content p{
   font-size: 30px;
+  font-family: 微軟正黑體;
 }
 
 
