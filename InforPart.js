@@ -81,16 +81,6 @@ $(document).ready(function() {
   var IndexIntr = 0;
   GroupIntr.eq(IndexIntr).css("display", "flex");
 
-  GroupIntr.mousemove(function() {
-    changeL.css("visibility", "visible");
-    changeR.css("visibility", "visible");
-  });
-
-  /*he.mouseout(function() {
-    changeL.css("visibility", "hidden");
-    changeR.css("visibility", "hidden");
-  });*/
-
   changeL.click(function() {
     GroupIntr.eq(IndexIntr).css("display", "none");
     if (IndexIntr == 5) {

@@ -188,6 +188,14 @@ h1{
   background-color: #000;
 }
 
+#Network_registration{
+  background-color: #FF0000;
+}
+
+#Onsite_registration{
+  background-color: #0066FF;
+}
+
 #Registration_window h2{
   color:#EEE;
   font-family: 微軟正黑體;
@@ -202,10 +210,8 @@ h1{
   justify-content: center;
   flex-direction: column;
   height: 220px;
-  color:#EEE;
   padding: 0 20px;
-  background-color: #000;
-  border: 2pt solid #EEE;
+  border: 2pt solid #000;
 }
 
 .Registration .Note{
@@ -246,9 +252,8 @@ h1{
   float: left;
   width: 70%;
   height: 500px;
-  background-color:#000;
   border-radius: 20px;
-  border: 2pt solid #EEE;
+  border: 2pt solid #000;
 }
 
 #hexagon #mid_squre .Group_intr{
@@ -265,7 +270,6 @@ h1{
 #hexagon #mid_squre .Group_intr h2{
   font-size: 50px;
   font-family: Microsoft JhengHei;
-  color:	#EEE;
   margin: 30px 0;
 }
 
@@ -280,7 +284,6 @@ h1{
 #hexagon #mid_squre .Group_intr .content p{
   font-size: 25px;
   line-height: 45px;
-  color:#F0F0F0;
   font-family: 微軟正黑體;
 }
 
@@ -310,7 +313,17 @@ h1{
   padding: 30px 60px;
 }
 
-#otherIntro h2{
+#equipmentIntro{
+  background-color: #666666;
+}
+
+#scoreIntro{
+  background-color: 	#CCFF99;
+}
+
+
+
+#otherIntro h2,#otherIntro h4{
   margin: 20px 0;
 }
 
@@ -322,7 +335,10 @@ h1{
   align-items: center;
   justify-content:flex-start;
   padding: 0 30px;
-  border:2px solid #000;
+  border:2px solid #EEE;
+  color: #EEE;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 footer{
