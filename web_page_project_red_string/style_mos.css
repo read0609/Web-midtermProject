@@ -91,7 +91,11 @@ h1{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 10px 0;
+}
+
+#Registration_reciprocal #reciprocal .Date h3{
+  margin: 15px 0;
 }
 
 #Registration_reciprocal #reciprocal .Date{
