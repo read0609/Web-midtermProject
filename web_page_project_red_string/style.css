@@ -465,3 +465,50 @@ img.share_btn{
             animation-play-state: paused;
 }*/
 /*-----------------------------------------------------*/
+/*聯絡我們*/
+.message_l{
+  width: 50%;
+  height: 500px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.message_name{
+  display: inline-block;
+  margin: 0px;
+  margin-bottom: 25px;
+  margin-left: 50PX;
+  margin-top: 25PX;
+}
+*{
+  Xborder: 1px solid black;
+}
+.message_r{
+  width: 50%;
+  height: 500px;
+  padding: 0px;
+  float: right;
+}
+.map{
+  margin-left: 90px;
+}
+.blank{
+  height: 200px;
+}
+.blank_2{
+  height: 700px;
+  width: 100%;
+}
+.m_icon{
+  height: 40px;
+  margin-top: 20PX;
+  margin-left: 90PX;
+  margin-right: 50px;
+}
+.m_icon_t{
+  margin-left: 20px;
+  Xmargin-top: -50px;
+}
+.m_icon_t a{
+  font-size: 20px;
+}
