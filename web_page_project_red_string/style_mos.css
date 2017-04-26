@@ -3,7 +3,7 @@
   box-sizing: border-box;
   transition: all .5s;
 }
-ul, li, a, div,p{
+ul, li, a, div,p,h2{
   padding: 0px;
   margin: 0px;
 }
@@ -65,17 +65,54 @@ h1{
 
 .Registration{
   max-width: 100vw;
-  height: 250px;
+  height: 400px;
   box-sizing: border-box;
-  padding:20px 8vw 20px 8vw;
+  padding:0 50px;
   display:flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 #Registration_reciprocal{
-  height: 200px;
-  width:500px;
+  height: 300px;
+  width:700px;
   background-color: #99FF99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Registration_reciprocal #reciprocal{
+  height: 200px;
+  width:700px;
+  background-color: #99FF99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#Registration_reciprocal #reciprocal .Date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  margin: 0 5px;
+}
+
+#Registration_reciprocal .Date .unit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #11FF99;
 }
 
 .Registration_Process{
@@ -84,7 +121,7 @@ h1{
   justify-content: center;
   align-items: center;
   width:700px;
-  height: 200px;
+  height: 300px;
 }
 
 #Registration_window{
@@ -93,35 +130,37 @@ h1{
   justify-content: center;
   align-items: center;
   width: 700px;
-  height: 110px;
+  height: 220px;
 }
 
 #Network_registration,#Onsite_registration{
+  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   cursor:default;
-  padding: 0 60px 0 60px;
   border:5pt solid #786;
-  text-align: center;
-  width: 200px;
-  height: 110px;
+  width: 300px;
+  height: 220px;
   background-color: #EEFFBB;
 }
 
 #Network_text, #Onsite_text{
-  width:340px;
+  display:none;
+  width:400px;
   word-wrap: break-word;
-  height: 110px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 220px;
   background-color: #FFFFBB;
   border: 2pt solid #755;
-  display:none;
 }
 
 .Registration .Note{
   text-align: left;
-  width:550px;
-  margin: 0 auto;
+  width:700px;
+  margin: 0 20px;
   box-sizing: border-box;
   padding-left: 50px;
 }

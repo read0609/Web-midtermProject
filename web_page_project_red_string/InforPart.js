@@ -1,7 +1,29 @@
 $(document).ready(function() {
   //Registration_reciprocal
-  var reciprocal = $("Registration_reciprocal");
+  //var reciprocal = $("Registration_reciprocal");
+  var startDay = new Date();
+  var endDay = new Date('2017/11/06 08:00');
+  var spantime = (endDay - startDay) / 1000;
+  var units = $(".unit");
+  $(this).everyTime('1s', function(i) {
+    spantime--;
+    var d = Math.floor(spantime / (24 * 3600));
+    var h = Math.floor((spantime % (24 * 3600)) / 3600);
+    var m = Math.floor((spantime % 3600) / (60));
+    var s = Math.floor(spantime % 60);
 
+    if (spantime > 0) {
+      units.eq(0).text(d);
+      units.eq(1).text(h);
+      units.eq(2).text(m);
+      units.eq(3).text(s);
+    } else { // 避免倒數變成負的
+      units.eq(0).text(0);
+      units.eq(1).text(0);
+      units.eq(2).text(0);
+      units.eq(3).text(0);
+    }
+  });
 
   //registration
   var NetReg = $("#Network_registration");
@@ -14,21 +36,21 @@ $(document).ready(function() {
 
   function HoverReg(self, selfT, other) {
     self.css({
-      "width": "110px",
+      "width": "220px",
       "padding": "0 10px"
     });
-    selfT.css("display", "block");
+    selfT.css("display", "flex");
     other.css("display", "none");
   };
 
   function ResetReg(Reset, self, selfT, other) {
     if (Reset) {
       self.css({
-        "width": "200px",
+        "width": "300px",
         "padding": "0 60px 0 60px"
       });
       selfT.css("display", "none");
-      other.css("display", "block");
+      other.css("display", "flex");
       Reset = false;
     }
     return Reset;
