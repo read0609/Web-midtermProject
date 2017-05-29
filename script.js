@@ -1,13 +1,13 @@
-var isClick = false;
+var isClick__footer__share = false;
 var arrow = false;
 
 $('.footer__share').click(function() {
-  if (!isClick) {
+  if (!isClick__footer__share) {
     $('.footer__share__btn__ul').addClass('footer__share__btn__ul--display');
-    isClick = true;
+    isClick__footer__share = true;
   } else {
     $('.footer__share__btn__ul').removeClass('footer__share__btn__ul--display');
-    isClick = false;
+    isClick__footer__share = false;
   }
 });
 
