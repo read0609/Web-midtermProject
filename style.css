@@ -4,6 +4,7 @@
   -border: solid 1px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   transition: all .5s;
+
 }
 
 ul, li, a, div, p {
@@ -15,15 +16,16 @@ body, footer {
   margin: 0px;
   padding: 0px;
   font-family: 微軟正黑體;
+  background-color: #FFFAFA;
 }
 
-.row {
+.common__row {
   width: 100%;
   margin-right: -20px;
   -margin: 0 auto;
 }
 
-.col {
+.common__col {
   padding-left: 20px;
   padding-right: 20px;
   float: left;
@@ -174,7 +176,7 @@ footer a {
   margin-right: 10px;
 }
 
-.footer_right {
+.footer__right {
   float: right;
 }
 
@@ -197,11 +199,11 @@ footer a {
   display: inline-block;
 }
 
-.footer__share_btn {
+.footer__share__btn {
   cursor: pointer;
 }
 
-.footer__share_btn_ul {
+.footer__share__btn__ul {
   height: 60px;
   padding: 0px 10px;
   background-color: #ddd;
@@ -213,18 +215,18 @@ footer a {
   -visibility: visible;
 }
 
-.footer__share_btn_ul_display {
+.footer__share__btn__ul__display {
   opacity: 1;
 }
 
-.footer__share_btn_ul li {
+.footer__share_btn__ul li {
   display: inline-block;
   width: auto;
 }
 
-.footer__share_btn_ul ul {}
+.footer__share_btn__ul ul {}
 
-.footer__share_btn_ul img {
+.footer__share_btn__ul img {
   width: 30px;
   height: auto;
   margin: 0 5px;
@@ -236,7 +238,7 @@ footer a {
 
 /*--關於赤弦-與-贊助廠商-------------------------------------------------*/
 
-.about {
+.index__about {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -244,11 +246,12 @@ footer a {
   overflow: auto;
 }
 
-.about .col {
+.index__about .col {
   display: inline-block;
 }
 
-.square1, .square2, .square3, .square4 {
+.index__about__square1, .index__about__square2,
+.index__about__square3, .index__about__square4 {
   -background-color: #ffe6e6;
   height: 300px;
   overflow: hidden;
@@ -260,20 +263,27 @@ footer a {
   justify-content: center;
 }
 
-.square1 h3, .square2 h3, .square3 h3, .square4 h3 {
+.index__about__square1 .index_about_square_title,
+.index__about__square2 .index_about_square_title,
+.index__about__square3 .index_about_square_title,
+.index__about__square4 .index_about_square_title
+{
   display: inline-block;
   font-size: 60px;
   z-index: 15;
   color: #FFF;
 }
 
-.square1:hover .content1, .square2:hover .content2, .square3:hover .content3, .square4:hover .content4 {
+.index__about__square1:hover .index__about__square1__content1,
+.index__about__square2:hover .index__about__square2__content2,
+.index__about__square3:hover .index__about__square3__content3,
+.index__about__square4:hover .index__about__square4__content4 {
   opacity: 0.9;
   visibility: visible;
   z-index: 20;
 }
 
-.about_img {
+.index__about__img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -283,7 +293,7 @@ footer a {
   border-radius: 5px;
 }
 
-.arr_up1, .arr_up2, .arr_up3, .arr_up4 {
+.index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
   bottom: 0;
   right: 0;
   position: absolute;
@@ -293,7 +303,7 @@ footer a {
   display: none;
 }
 
-.arr_down1, .arr_down2, .arr_down3, .arr_down4 {
+.index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
   top: 0;
   right: 0;
   position: absolute;
@@ -303,7 +313,8 @@ footer a {
   display: none;
 }
 
-.content1, .content2, .content3, .content4 {
+.index__about__square1__content1, .index__about__square2__content2,
+.index__about__square3__content3, .index__about__square4__content4 {
   height: 100%;
   width: 100%;
   background-color: #333;
@@ -322,7 +333,8 @@ footer a {
   z-index: 20;
 }
 
-.content1 p, .content2 p, .content3 p, .content4 p {
+.index__about__square1__content1 p, .index__about__square2__content2 p,
+.index__about__square3__content3 p, .index__about__square4__content4 p {
   padding: 0px;
   margin: 30px;
   font-size: 14px;
@@ -702,13 +714,14 @@ footer a {
     margin-top: 100px;
     margin-bottom: 50px;
   }
-  .about {
+  .index__about {
     display: block;
   }
   .col-sm-6 {
     width: 100%;
   }
-  .square1, .square2, .square3, .square4 {
+  .index__about__square1, .index__about__square2,
+  .index__about__square3, .index__about__square4 {
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -755,7 +768,7 @@ footer a {
   .index__majorPic {
     margin-top: 0px;
   }
-  .col {
+  .common_col {
     padding-left: 0;
     padding-right: 0;
   }
@@ -763,33 +776,34 @@ footer a {
     display: block;
     float: none;
   }
-  .footer_right {
+  .footer__right {
     float: none;
   }
-  .footer__share_btn {
+  .footer__share__btn {
     display: none;
   }
-  .footer__share_btn_ul {
+  .footer__share__btn__ul {
     opacity: 1;
   }
-  .footer_right p {
+  .footer__right p {
     font-size: 11px;
   }
-  .arr_down1, .arr_down2, .arr_down3, .arr_down4 {
+  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
     display: block;
     cursor: pointer;
   }
-  .arr_down_hide {
+  .index__arr__down--hide {
     display: none;
   }
-  .arr_up1, .arr_up2, .arr_up3, .arr_up4 {
+  .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
     display: none;
     cursor: pointer;
   }
-  .arr_up_dis {
+  .index__arr__down--display {
     display: block;
   }
-  .content1, .content2, .content3, .content4 {
+  .index__about__square1__content1, .index__about__square2__content2,
+  .index__about__square3__content3, .index__about__square4__content4 {
     pointer-events: none;
   }
 }
