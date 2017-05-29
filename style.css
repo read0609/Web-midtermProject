@@ -76,19 +76,19 @@ body, footer {
 
 /*@media screen and (min-width: 1024px) {*/
 
-.container {
+.header__container {
   max-width: 1170px;
   -overflow: auto;
   justify-content: space-around;
   margin: 0 auto;
 }
 
-h1 a {
+.header__title a {
   text-decoration: none;
   color: #EEE;
 }
 
-h1 {
+.header__title {
   display: inline-block;
   float: left;
   color: #EEE;
@@ -106,12 +106,12 @@ h1 {
   overflow: auto;
 }
 
-.nav {
+.header__nav {
   float: right;
   display: block;
 }
 
-.nav li {
+.header__nav li {
   overflow: auto;
   display: inline-block;
   font-family: Arial;
@@ -119,14 +119,14 @@ h1 {
   margin-left: 40px;
 }
 
-.nav a {
+.header__nav a {
   text-decoration: none;
   color: #EEE;
   font-weight: bolder;
   font-size: 14px;
 }
 
-.header span.menu {
+.header .header__menu {
   display: none;
   font-size: 2em;
   position: absolute;
@@ -155,7 +155,7 @@ h1 {
   margin-top: 50px;
 }
 
-footer .container {
+footer .header__container {
   text-align: center;
   overflow: hidden;
 }
@@ -681,7 +681,7 @@ img.share_btn {
   font-size: 20px;
 }
 @media only screen and (max-width: 768px) {
-      .container {
+      .header__container {
         max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
@@ -690,24 +690,24 @@ img.share_btn {
         overflow: visible;
         height: 180px;
       }
-      h1 {
+      .header__title {
         width: auto;
         height: auto;
         display: block;
         text-align: left;
       }
-      .nav {
+      .header__nav {
         width: 100%;
         overflow: hidden;
       }
-      .nav li {
+      .header__nav li {
         margin: 0;
         width: 32%;
         overflow: hidden;
         margin-top: 5px;
         margin-bottom: 10px;
       }
-      .nav li a {
+      .header__nav li a {
         margin-right: 5px;
         margin-bottom: 5px;
         display: flex;
@@ -733,16 +733,16 @@ img.share_btn {
     }
 
     @media only screen and (max-width: 480px) {
-      .container {
+      .header__container {
         max-width: 480px;
       }
-      .header span.menu {
+      .header .header__menu {
         display: block;
         background-color: black;
         color: white;
         cursor: pointer;
       }
-      .nav {
+      .header__nav {
         position: absolute;
         left: 0;
         width: 100%;
@@ -750,20 +750,20 @@ img.share_btn {
         top: 62.5px;
         background-color: black;
       }
-      .nav li {
+      .header__nav li {
         float: none;
         width: 100%;
         margin-bottom: 14px;
         padding-left: 15px;
       }
-      .nav a {
+      .header__nav a {
         margin: 0;
         float: left;
       }
-      h1 {
+      .header__title {
         line-height: 20px;
       }
-      h1 a {
+      .header__title a {
         font-size: 24px;
         width: auto;
       }
