@@ -72,28 +72,12 @@ body, footer {
 .col-sm-1 {
   width: 8.332%;
 }
-
-
-/*@media screen and (min-width: 1024px) {*/
-
-.header__container {
+/*===========header================*/
+.common__container {
   max-width: 1170px;
   -overflow: auto;
   justify-content: space-around;
   margin: 0 auto;
-}
-
-.header__title a {
-  text-decoration: none;
-  color: #EEE;
-}
-
-.header__title {
-  display: inline-block;
-  float: left;
-  color: #EEE;
-  font-family: Microsoft JhengHei;
-  /*}*/
 }
 
 .header {
@@ -104,6 +88,19 @@ body, footer {
   top: 0px;
   z-index: 1000;
   overflow: auto;
+}
+
+.header__title {
+  display: inline-block;
+  float: left;
+  color: #EEE;
+  font-family: Microsoft JhengHei;
+  /*}*/
+}
+
+.header__title a {
+  text-decoration: none;
+  color: #EEE;
 }
 
 .header__nav {
@@ -135,27 +132,15 @@ body, footer {
   top: 15px;
   right: 10px;
 }
+/*===========header================*/
 
-
-/*
-.majorPic {
-  max-width: 100%;
-  height: 780px;
-  margin-top: -50px;
-  background-image: url("image/cover.jpg");
-  background-size: cover;
-  background-position: top;
-  -background-attachment: fixed;
-}
-*/
-
-.majorPic img {
+.index__majorPic img {
   max-width: 100%;
   height: auto;
   margin-top: 50px;
 }
 
-footer .header__container {
+footer .common__container {
   text-align: center;
   overflow: hidden;
 }
@@ -189,16 +174,16 @@ footer a {
   margin-right: 10px;
 }
 
-.small {
+.footer_right {
   float: right;
 }
 
-.footerLeft {
+.footer__footerLeft {
   float: left;
   display: inline-block;
 }
 
-.share {
+.footer__share {
   display: inline-block;
   height: auto;
   text-align: center;
@@ -206,17 +191,17 @@ footer a {
   position: relative;
 }
 
-.share img {
+.footer__share img {
   width: 40px;
   height: auto;
   display: inline-block;
 }
 
-img.share_btn {
+.footer__share_btn {
   cursor: pointer;
 }
 
-.share_icons {
+.footer__share_btn_ul {
   height: 60px;
   padding: 0px 10px;
   background-color: #ddd;
@@ -228,24 +213,18 @@ img.share_btn {
   -visibility: visible;
 }
 
-
-/*.share:hover ~ .share_icons{
-  opacity: 1;
-  -visibility: visible;
-}*/
-
-.share_icons_display {
+.footer__share_btn_ul_display {
   opacity: 1;
 }
 
-.share_icons li {
+.footer__share_btn_ul li {
   display: inline-block;
   width: auto;
 }
 
-.share_icons ul {}
+.footer__share_btn_ul ul {}
 
-.share_icons img {
+.footer__share_btn_ul img {
   width: 30px;
   height: auto;
   margin: 0 5px;
@@ -336,11 +315,13 @@ img.share_btn {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .content_display {
   opacity: 0.9;
   visibility: visible;
   z-index: 20;
 }
+
 .content1 p, .content2 p, .content3 p, .content4 p {
   padding: 0px;
   margin: 30px;
@@ -680,134 +661,135 @@ img.share_btn {
 .m_icon_t a {
   font-size: 20px;
 }
-@media only screen and (max-width: 768px) {
-      .header__container {
-        max-width: 768px;
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      .header {
-        overflow: visible;
-        height: 180px;
-      }
-      .header__title {
-        width: auto;
-        height: auto;
-        display: block;
-        text-align: left;
-      }
-      .header__nav {
-        width: 100%;
-        overflow: hidden;
-      }
-      .header__nav li {
-        margin: 0;
-        width: 32%;
-        overflow: hidden;
-        margin-top: 5px;
-        margin-bottom: 10px;
-      }
-      .header__nav li a {
-        margin-right: 5px;
-        margin-bottom: 5px;
-        display: flex;
-        justify-content: center;
-      }
-      .majorPic {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 100px;
-        margin-bottom: 50px;
-      }
-      .about {
-        display: block;
-      }
-      .col-sm-6 {
-        width: 100%;
-      }
-      .square1,.square2,.square3,.square4 {
-        margin-top: 0;
-        margin-bottom: 50px;
-      }
-    }
 
-    @media only screen and (max-width: 480px) {
-      .header__container {
-        max-width: 480px;
-      }
-      .header .header__menu {
-        display: block;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-      }
-      .header__nav {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        display: none;
-        top: 62.5px;
-        background-color: black;
-      }
-      .header__nav li {
-        float: none;
-        width: 100%;
-        margin-bottom: 14px;
-        padding-left: 15px;
-      }
-      .header__nav a {
-        margin: 0;
-        float: left;
-      }
-      .header__title {
-        line-height: 20px;
-      }
-      .header__title a {
-        font-size: 24px;
-        width: auto;
-      }
-      .header {
-        height: auto;
-      }
-      .majorPic {
-        margin-top: 0px;
-      }
-      .col {
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .footerLeft {
-        display: block;
-        float: none;
-      }
-      .small {
-        float: none;
-      }
-      img.share_btn {
-        display: none;
-      }
-      .share_icons {
-        opacity: 1;
-      }
-      .small p {
-        font-size: 11px;
-      }
-      .arr_down1,.arr_down2,.arr_down3,.arr_down4 {
-        display: block;
-        cursor: pointer;
-      }
-      .arr_down_hide {
-        display: none;
-      }
-      .arr_up1,.arr_up2,.arr_up3,.arr_up4 {
-        display: none;
-        cursor: pointer;
-      }
-      .arr_up_dis {
-        display: block;
-      }
-      .content1, .content2, .content3, .content4 {
-        pointer-events: none;
-      }
-    }
+@media only screen and (max-width: 768px) {
+  .common__container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    overflow: visible;
+    height: 180px;
+  }
+  .header__title {
+    width: auto;
+    height: auto;
+    display: block;
+    text-align: left;
+  }
+  .header__nav {
+    width: 100%;
+    overflow: hidden;
+  }
+  .header__nav li {
+    margin: 0;
+    width: 32%;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .header__nav li a {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .index__majorPic {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .about {
+    display: block;
+  }
+  .col-sm-6 {
+    width: 100%;
+  }
+  .square1, .square2, .square3, .square4 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .common__container {
+    max-width: 480px;
+  }
+  .header .header__menu {
+    display: block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .header__nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+    top: 62.5px;
+    background-color: black;
+  }
+  .header__nav li {
+    float: none;
+    width: 100%;
+    margin-bottom: 14px;
+    padding-left: 15px;
+  }
+  .header__nav a {
+    margin: 0;
+    float: left;
+  }
+  .header__title {
+    line-height: 20px;
+  }
+  .header__title a {
+    font-size: 24px;
+    width: auto;
+  }
+  .header {
+    height: auto;
+  }
+  .index__majorPic {
+    margin-top: 0px;
+  }
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__footerLeft {
+    display: block;
+    float: none;
+  }
+  .footer_right {
+    float: none;
+  }
+  .footer__share_btn {
+    display: none;
+  }
+  .footer__share_btn_ul {
+    opacity: 1;
+  }
+  .footer_right p {
+    font-size: 11px;
+  }
+  .arr_down1, .arr_down2, .arr_down3, .arr_down4 {
+    display: block;
+    cursor: pointer;
+  }
+  .arr_down_hide {
+    display: none;
+  }
+  .arr_up1, .arr_up2, .arr_up3, .arr_up4 {
+    display: none;
+    cursor: pointer;
+  }
+  .arr_up_dis {
+    display: block;
+  }
+  .content1, .content2, .content3, .content4 {
+    pointer-events: none;
+  }
+}
