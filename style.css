@@ -193,7 +193,7 @@ footer a {
   position: relative;
 }
 
-.footer__share img {
+.footer__share__btn {
   width: 40px;
   height: auto;
   display: inline-block;
@@ -215,18 +215,17 @@ footer a {
   -visibility: visible;
 }
 
-.footer__share__btn__ul__display {
+.footer__share__btn__ul--display {
   opacity: 1;
 }
 
-.footer__share_btn__ul li {
+.footer__share__btn__ul li {
   display: inline-block;
   width: auto;
 }
 
-.footer__share_btn__ul ul {}
 
-.footer__share_btn__ul img {
+.footer__share__btn__ul img {
   width: 30px;
   height: auto;
   margin: 0 5px;
@@ -768,7 +767,7 @@ footer a {
   .index__majorPic {
     margin-top: 0px;
   }
-  .common_col {
+  .common__col {
     padding-left: 0;
     padding-right: 0;
   }
@@ -788,7 +787,8 @@ footer a {
   .footer__right p {
     font-size: 11px;
   }
-  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
+  .index__arr__down1, .index__arr__down2,
+  .index__arr__down3, .index__arr__down4 {
     display: block;
     cursor: pointer;
   }

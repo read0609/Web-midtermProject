@@ -3,10 +3,10 @@ var arrow = false;
 
 $('.footer__share').click(function() {
   if (!isClick) {
-    $('.footer__share__btn__ul').addClass('.footer__share__btn__ul__display');
+    $('.footer__share__btn__ul').addClass('footer__share__btn__ul--display');
     isClick = true;
   } else {
-    $('.footer__share__btn__ul').removeClass('.footer__share__btn__ul__display');
+    $('.footer__share__btn__ul').removeClass('footer__share__btn__ul--display');
     isClick = false;
   }
 });
