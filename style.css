@@ -290,7 +290,7 @@ footer a {
   border-radius: 5px;
 }
 
-.index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
+.index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4, .index__arr__up5, .index__arr__up6, .index__arr__up7, .index__arr__up8, .index__arr__up9 {
   bottom: 0;
   right: 0;
   position: absolute;
@@ -300,7 +300,7 @@ footer a {
   display: none;
 }
 
-.index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
+.index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4, .index__arr__down5, .index__arr__down6, .index__arr__down7, .index__arr__down8, .index__arr__down9 {
   top: 0;
   right: 0;
   position: absolute;
@@ -364,6 +364,11 @@ footer a {
   visibility: hidden;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display{
+  opacity: 0.9;
+  visibility: visible;
 }
 
 .sup1__data p, .sup2__data p, .sup3__data p, .sup4__data p, .sup5__data p, .sup6__data p, .sup7__data p, .sup8__data p, .sup9__data p {
@@ -764,22 +769,20 @@ footer a {
   }
   /*--相同部分End--------------------------------------------------*/
   /*--關於赤弦--------------------------------------------------*/
-  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
+  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4, .index__arr__down5, .index__arr__down6, .index__arr__down7, .index__arr__down8, .index__arr__down9 {
     display: block;
     cursor: pointer;
   }
   .index__arr__down--hide {
     display: none;
   }
-  .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
+  .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4, .index__arr__up5, .index__arr__up6, .index__arr__up7, .index__arr__up8, .index__arr__u94 {
     display: none;
     cursor: pointer;
   }
   .index__arr__down--display {
     display: block;
   }
-  .index__about__square1:hover .index__about__square1__content1, .index__about__square2:hover .index__about__square2__content2, .index__about__square3:hover .index__about__square3__content3, .index__about__square4:hover .index__about__square4__content4 {
-    pointer-events: none;
-  }
+
   /*--關於赤弦--------------------------------------------------*/
 }
