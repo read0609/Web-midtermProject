@@ -323,7 +323,7 @@ footer a {
   border-radius: 10px;
 }
 
-.content_display {
+.content--display {
   opacity: 0.9;
   visibility: visible;
   z-index: 20;
@@ -694,6 +694,10 @@ footer a {
   }
   /*--關於赤弦End--------------------------------------------------*/
   /*--贊助廠商--------------------------------------------------*/
+  .col-sm-4 {
+    width: 100%;
+  }
+  /*--贊助廠商End--------------------------------------------------*/
 }
 
 @media only screen and (max-width: 480px) {
@@ -774,7 +778,7 @@ footer a {
   .index__arr__down--display {
     display: block;
   }
-  .index__about__square1__content1, .index__about__square2__content2, .index__about__square3__content3, .index__about__square4__content4 {
+  .index__about__square1:hover .index__about__square1__content1, .index__about__square2:hover .index__about__square2__content2, .index__about__square3:hover .index__about__square3__content3, .index__about__square4:hover .index__about__square4__content4 {
     pointer-events: none;
   }
   /*--關於赤弦--------------------------------------------------*/
