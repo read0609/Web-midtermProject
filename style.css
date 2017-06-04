@@ -137,9 +137,9 @@ body, footer {
   right: 10px;
 }
 
+/*===========headerEnd================*/
 
-/*===========header================*/
-
+/*===========footer================*/
 .index__majorPic img {
   max-width: 100%;
   height: auto;
@@ -235,10 +235,10 @@ footer a {
 }
 
 
-/*---------------------------------------------------------*/
+/*------------------------footerEnd---------------------------------*/
 
 
-/*--關於赤弦-與-贊助廠商-------------------------------------------------*/
+/*--關於赤弦--------------------------------------------------*/
 
 .index__about {
   width: 100%;
@@ -264,7 +264,7 @@ footer a {
   justify-content: center;
 }
 
-.index__about__square1 .index_about_square_title, .index__about__square2 .index_about_square_title, .index__about__square3 .index_about_square_title, .index__about__square4 .index_about_square_title {
+.index_about_square_title {
   display: inline-block;
   font-size: 60px;
   z-index: 15;
@@ -334,7 +334,9 @@ footer a {
   line-height: 30px;
   letter-spacing: 2px;
 }
+/*----關於赤弦End------------*/
 
+/*----贊助廠商-------------*/
 .index__support__nine_pic {
   margin-top: 50px;
 }
@@ -433,17 +435,9 @@ footer a {
   background-image: url("image/sup9.png");
   background-size: 75%;
 }
+/*--------------贊助廠商End---------------------------------------*/
 
-.sup1_data p {
-  margin-top: 50px;
-  font-size: 15px;
-}
-
-
-/*-----------------------------------------------------*/
-
-
-/*歷年回顧---------------------------------------*/
+/*--------------歷年回顧---------------------------------------*/
 
 .review_main {
   margin-bottom: 0px;
@@ -579,10 +573,10 @@ footer a {
 }
 
 
-/*-----------------------------------------------------*/
+/*---------------歷年回顧End--------------------------------------*/
 
 
-/*聯絡我們*/
+/*------------聯絡我們----------------*/
 
 .message_l {
   width: 50%;
@@ -640,7 +634,11 @@ footer a {
   font-size: 20px;
 }
 
+/*--------聯絡我們End-------------*/
+
+/*---------平板電腦設計----------*/
 @media only screen and (max-width: 768px) {
+    /*--相同部分--------------------------------------------------*/
   .common__container {
     max-width: 768px;
     padding-left: 15px;
@@ -673,6 +671,9 @@ footer a {
     display: flex;
     justify-content: center;
   }
+  /*--相同部分End--------------------------------------------------*/
+
+  /*--關於赤弦--------------------------------------------------*/
   .index__majorPic {
     background-position: center;
     background-size: contain;
@@ -690,6 +691,9 @@ footer a {
     margin-top: 0;
     margin-bottom: 50px;
   }
+  /*--關於赤弦End--------------------------------------------------*/
+
+  /*--贊助廠商--------------------------------------------------*/
 }
 
 @media only screen and (max-width: 480px) {
