@@ -366,7 +366,7 @@ footer a {
   border-radius: 10px;
 }
 
-.sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display{
+.sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
   opacity: 0.9;
   visibility: visible;
 }
@@ -447,9 +447,8 @@ footer a {
 }
 
 .index__review__youtube {
-  height: 200px;
   width: 33.332%;
-  background-size: 50% 80%;
+  -background-size: 50% 80%;
   margin: 0px auto;
   position: relative;
 }
@@ -457,19 +456,18 @@ footer a {
 .index__review__youtube img {
   display: block;
   margin: 0px auto;
-  width: 60%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
 }
 
 .index__review__gif {
-  width: 50%;
+  width: 70%;
   height: 500px;
-  margin: -50px auto;
-  .background-color: #FAE0E0;
+  margin: auto;
+  -background-color: #FAE0E0;
   position: relative;
-  margin-top: -100px;
 }
 
 .index__review__gif__gif1, .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
@@ -514,8 +512,8 @@ footer a {
 .index__review__flickr img {
   display: block;
   margin: 0px auto;
-  width: 50%;
-  height: 70%;
+  width: 70%;
+  height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
 }
@@ -524,7 +522,6 @@ footer a {
   margin: 0px auto;
   height: 450px;
   position: relative;
-  margin-top: 50px;
   overflow: visible;
   display: flex;
   justify-content: center;
@@ -703,6 +700,20 @@ footer a {
     width: 100%;
   }
   /*--贊助廠商End--------------------------------------------------*/
+  /*--歷年回顧--------------------------------------------------*/
+  .index__review__gif {
+    margin-top: -50px;
+  }
+  .index__review__flickr img {
+    margin-top: 0;
+  }
+  .index__review__flickr__animation {
+    margin-top: -50px;
+  }
+  .index__review__gif{
+    width:90%;
+  }
+  /*--贊助廠商End--------------------------------------------------*/
 }
 
 @media only screen and (max-width: 480px) {
@@ -783,6 +794,5 @@ footer a {
   .index__arr__down--display {
     display: block;
   }
-
   /*--關於赤弦--------------------------------------------------*/
 }
