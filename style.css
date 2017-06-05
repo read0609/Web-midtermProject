@@ -511,7 +511,7 @@ footer a {
 .index__review__flickr img {
   display: block;
   margin: 0px auto;
-  width: 100%;
+  width: 70%;
   height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
@@ -703,6 +703,7 @@ footer a {
   /*--歷年回顧--------------------------------------------------*/
   .index__review__flickr img {
     margin-top: 0;
+    width: 100%;
   }
   .index__review__gif {
     width: 90%;
