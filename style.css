@@ -504,15 +504,14 @@ footer a {
 }
 
 .index__review__flickr {
-  height: 200px;
-  width: 33.332%;
+  width: 30%;
   margin: 0px auto;
 }
 
 .index__review__flickr img {
   display: block;
   margin: 0px auto;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
@@ -525,6 +524,7 @@ footer a {
   overflow: visible;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .index__review__flickr__animation div {
@@ -701,17 +701,15 @@ footer a {
   }
   /*--贊助廠商End--------------------------------------------------*/
   /*--歷年回顧--------------------------------------------------*/
-  .index__review__gif {
-    margin-top: -50px;
-  }
   .index__review__flickr img {
     margin-top: 0;
   }
-  .index__review__flickr__animation {
-    margin-top: -50px;
+  .index__review__gif {
+    width: 90%;
   }
-  .index__review__gif{
-    width:90%;
+  .index__review__flickr__animation div img{
+    width:100%;
+    height: auto;
   }
   /*--贊助廠商End--------------------------------------------------*/
 }
@@ -795,4 +793,33 @@ footer a {
     display: block;
   }
   /*--關於赤弦--------------------------------------------------*/
+  /*--歷年回顧--------------------------------------------------*/
+  .index__review__youtube {
+    width: 50%;
+  }
+  .index__review__gif {
+    height: 250px;
+  }
+  .index__review__gif__gif1 {
+    width: 100%;
+  }
+  .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
+    display: none;
+  }
+  .index__review__gif {
+    margin-top: -35px;
+  }
+  .index__review__flickr {
+    width: 45%;
+    margin-top: 90px;
+  }
+  .index__review__flickr__animation div img{
+    width:100%;
+    height: auto;
+  }
+  .index__review__flickr__animation{
+    margin-top: 20px;
+    height: 300px;
+  }
+  /*--歷年回顧End--------------------------------------------------*/
 }
