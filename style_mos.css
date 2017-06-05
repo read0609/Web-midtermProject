@@ -1,98 +1,6 @@
-*{
-  .border:solid 1px rgba(0,0,0,0.5);
-  box-sizing: border-box;
-  transition: all .5s;
-}
-ul, li, a, div,p,h2{
-  padding: 0px;
-  margin: 0px;
-}
-body,footer{
-  margin: 0px;
-  padding: 0px;
-}
 
-.container{
-  max-width: 1170px;
-  overflow: auto;
-  justify-content: space-around;
-  margin:0 auto;
-}
-
-.header{
-  background-color: #000;
-  width:100%;
-  height:100px;
-  position: fixed;
-  top:0px;
-  z-index: 1000;
-  overflow: auto;
-
-}
-.nav{
-  overflow:auto;
-}
-h1 a{
-  text-decoration: none;
-  color:#EEE;
-}
-h1{
-  display:inline-block;
-  float:left;
-  color:#EEE;
-  font-family: Microsoft JhengHei;
-  margin-top:28px;
-}
-
-.nav ul li{
-  display:inline-block;
-  float:right;
-  font-family: Arial;
-  margin-top: 40px;
-  margin-left : 40px;
-}
-.nav a{
-    text-decoration: none;
-    color:#EEE;
-    font-weight: bolder;
-    font-size:14px;
-}
-.majorPic{
-  max-width: 100%;
-  height: 780px;
-  margin-top: -50px;
-  background-image: url("image/cover.jpg");
-  background-size: cover;
-  background-position: top;
-  .background-attachment: fixed;
-}
-.title_text{
+.index__intro__singup{
   width: 100%;
-  height: 250px;
-}
-
-.title_text h2{
-  margin-top: 100px;
-  font-size: 50px;
-  font-family: Microsoft JhengHei;
-  text-align: center;
-  color:#003377;
-  margin-bottom: 20px;
-}
-
-.title_image{
-  display: block;
-  margin: auto;
-}
-
-.title_text p{
-  text-align: center;
-  font-size: 15px;
-  line-height: 30px;
-}
-
-.Registration{
-  max-width: 100vw;
   height: 400px;
   box-sizing: border-box;
   padding:0 50px;
@@ -101,7 +9,7 @@ h1{
   justify-content: space-between;
 }
 
-#Registration_reciprocal{
+.singup__countdown{
   height: 300px;
   width:700px;
   display: flex;
@@ -110,16 +18,12 @@ h1{
   justify-content: center;
 }
 
-#Registration_reciprocal h2{
+.countdown__title{
   font-family: Microsoft JhengHei;
-  color: #003377;
+  color: 003377;
 }
 
-#Registration_reciprocal h3,p{
-  font-family: 微軟正黑體;
-}
-
-#Registration_reciprocal #reciprocal{
+.countdown__main{
   height: 200px;
   width:700px;
   display: flex;
@@ -129,11 +33,7 @@ h1{
   margin: 10px 0;
 }
 
-#Registration_reciprocal #reciprocal .Date h3{
-  margin: 15px 0;
-}
-
-#Registration_reciprocal #reciprocal .Date{
+.countdown__main__date{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,21 +43,33 @@ h1{
   margin: 0 5px;
 }
 
-#Registration_reciprocal .Date .unit{
+.countdown__date .date__unit,.countdown__time{
+  font-family: 微軟正黑體;
+}
+
+
+
+.countdown__date .date__unit{
+  margin: 15px 0;
+}
+
+
+
+.singup__countdown .Date .unit{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 180px;
   border-radius: 10px;
-  border: 2px solid #000;
-  background-color: #000;
-  color: #FFF;
+  border: 2px solid .000;
+  background-color: .000;
+  color: .FFF;
   font-size: 50px;
   font-family: Microsoft JhengHei;
 }
 
-.Registration_Process{
+.singup__process{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +78,7 @@ h1{
   height: 300px;
 }
 
-#Registration_window{
+.singup_window{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,33 +87,33 @@ h1{
   height: 220px;
 }
 
-#Network_registration,#Onsite_registration{
+.Network_singup,.Onsite_singup{
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   cursor:default;
-  border:5pt solid #FFF;
+  border:5pt solid .FFF;
   border-radius: 20px;
   width: 300px;
   height: 220px;
-  background-color: #000;
+  background-color: .000;
 }
 
-#Network_registration{
-  background-color: #FF0000;
+.Network_singup{
+  background-color: .FF0000;
 }
 
-#Onsite_registration{
-  background-color: #0066FF;
+.Onsite_singup{
+  background-color: .0066FF;
 }
 
-#Registration_window h2{
-  color:#EEE;
+.singup_window h2{
+  color:.EEE;
   font-family: 微軟正黑體;
 }
 
-#Network_text, #Onsite_text{
+.Network_text, .Onsite_text{
   display:none;
   border-radius: 20px;
   width:400px;
@@ -211,10 +123,10 @@ h1{
   flex-direction: column;
   height: 220px;
   padding: 0 20px;
-  border: 2pt solid #000;
+  border: 2pt solid .000;
 }
 
-.Registration .Note{
+.singup .Note{
   text-align: left;
   width:700px;
   margin: 0 20px;
@@ -222,7 +134,7 @@ h1{
   padding-left: 90px;
 }
 
-#hexagon{
+.hexagon{
   width:100%;
   height: 500px;
   display:flex;
@@ -230,11 +142,11 @@ h1{
   justify-content: center;
 }
 
-#hexagon::after{
+.hexagon::after{
   clear:both;
 }
 
-#hexagon #left_Tri,#hexagon #right_Tri{
+.hexagon .left_Tri,.hexagon .right_Tri{
   width: 15%;
   height: 500px;
   display: flex;
@@ -242,21 +154,21 @@ h1{
   align-items: center;
 }
 
-#hexagon #left_Tri p,#hexagon #right_Tri p{
+.hexagon .left_Tri p,.hexagon .right_Tri p{
   font-size: 100px;
   font-family: Arial;
   cursor: pointer;
 }
 
-#hexagon #mid_squre{
+.hexagon .mid_squre{
   float: left;
   width: 70%;
   height: 500px;
   border-radius: 20px;
-  border: 2pt solid #000;
+  border: 2pt solid .000;
 }
 
-#hexagon #mid_squre .Group_intr{
+.hexagon .mid_squre .Group_intr{
   display: none;
   justify-content: center;
   align-items: center;
@@ -267,13 +179,13 @@ h1{
   padding: 0 20px;
 }
 
-#hexagon #mid_squre .Group_intr h2{
+.hexagon .mid_squre .Group_intr h2{
   font-size: 50px;
   font-family: Microsoft JhengHei;
   margin: 20px 0;
 }
 
-#hexagon #mid_squre .Group_intr .content{
+.hexagon .mid_squre .Group_intr .content{
   display: flex;
   width: 100%;
   height: 350px;
@@ -282,13 +194,13 @@ h1{
   padding-top: 8px;
 }
 
-#hexagon #mid_squre .Group_intr .content p{
+.hexagon .mid_squre .Group_intr .content p{
   font-size: 25px;
   line-height: 45px;
   font-family: 微軟正黑體;
 }
 
-#otherIntro{
+.otherIntro{
   width: 100%;
   height: 450px;
   padding:20px 8vw 20px 8vw;
@@ -298,7 +210,7 @@ h1{
   align-items: center;
 }
 
-#equipmentIntro ,#checkIntro ,#scoreIntro{
+.equipmentIntro ,.checkIntro ,.scoreIntro{
   display: flex;
   align-items: center;
   justify-content:center;
@@ -306,7 +218,7 @@ h1{
   width:300px;
   height: 300px;
   border-radius: 150px;
-  border: 2px solid #000;
+  border: 2px solid .000;
   text-align: center;
   margin: 20px auto;
   font-family: 微軟正黑體;
@@ -314,19 +226,19 @@ h1{
   padding: 30px 60px;
 }
 
-#equipmentIntro{
-  background-color: #666666;
+.equipmentIntro{
+  background-color: .666666;
 }
 
-#scoreIntro{
-  background-color: 	#CCFF99;
+.scoreIntro{
+  background-color: 	.CCFF99;
 }
 
-#otherIntro h2,#otherIntro h4{
+.otherIntro h2,.otherIntro h4{
   margin: 20px 0;
 }
 
-#otherIntro #text_equipmentIntro,#otherIntro #text_checkIntro,#otherIntro #text_scoreIntro{
+.otherIntro .text_equipmentIntro,.otherIntro .text_checkIntro,.otherIntro .text_scoreIntro{
   display: none;
   height: 300px;
   width:80%;
@@ -334,33 +246,33 @@ h1{
   align-items: center;
   justify-content:flex-start;
   padding: 0 30px;
-  border:2px solid #EEE;
-  color: #EEE;
-  background-color: #000;
+  border:2px solid .EEE;
+  color: .EEE;
+  background-color: .000;
   border-radius: 10px;
 }
 
 footer{
   clear: both;
-  background-color: #000;
+  background-color: .000;
   max-width: auto;
   height:80px;
   margin-top:20px;
 }
 footer p{
-  color:#EEE;
+  color:.EEE;
   display: inline-block;
   margin-right: 10px;
   font-size: 15px;
 }
 footer a{
-  color:#EEE;
+  color:.EEE;
   text-decoration: none;
   font-size: 18px;
   margin-top: -30px;
 }
 .line2{
-  border-left:solid 1px #EEE;
+  border-left:solid 1px .EEE;
   height: 13px;
   display: inline-block;
   margin-right: 10px;
@@ -392,7 +304,7 @@ img.share_btn{
 }
 .share_icons{
   padding: 5px 20px;
-  background-color: #ddd;
+  background-color: .ddd;
   display: inline-block;
   border-radius: 5px;
   opacity: 0;
