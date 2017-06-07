@@ -1,7 +1,7 @@
 
 .index__intro__signup{
   width: 100%;
-  height: 400px;
+  height: 270px;
   box-sizing: border-box;
   display:flex;
   align-items: center;
@@ -9,8 +9,8 @@
 }
 
 .index__intro__signup__countdown{
-  height: 300px;
-  width:700px;
+  height: 250px;
+  width:520px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,16 +20,17 @@
 .index__intro__signup__countdown__title{
   font-family: Microsoft JhengHei;
   color: #003377;
+  margin: 0.5px 0;
 }
 
 .index__intro__signup__countdown__main{
-  height: 200px;
-  width:700px;
+  height: 175px;
+  width:520px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .index__intro__signup__countdown__main__date{
@@ -37,93 +38,99 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 200px;
+  width: 120px;
+  height: 170px;
   margin: 0 5px;
 }
 
-.index__intro__signup__countdown__main__date__unit,.index__intro__signup__countdown__time{
+.index__intro__signup__countdown__main__date__num{
+  margin: 10px 0;
   font-family: 微軟正黑體;
-}
-
-.index__intro__signup__countdown__main__date__unit{
-  margin: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 180px;
+  width: 120px;
+  height: 160px;
   border-radius: 10px;
   border: 2px solid #000;
   background-color: #000;
-  color: .FFF;
-  font-size: 50px;
+  color: #FFF;
+  font-size: 25px;
   font-family: Microsoft JhengHei;
 }
 
-.signup__process{
+.index__intro__signup__countdown__main__date__unit{
+  margin: 5px 0;
+}
+
+.index__intro__signup__countdown__time{
+  font-family: 微軟正黑體;
+}
+
+.index__intro__signup__process{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:700px;
-  height: 300px;
+  width:500px;
+  height: 230px;
+  margin-top:20px;
 }
 
-.signup_window{
+.index__intro__signup__process__window{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 220px;
+  width: 500px;
+  height: 180px;
 }
 
-.Network_signup,.Onsite_signup{
+.index__intro__signup__process__window__network,.index__intro__signup__process__window__onsite{
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   cursor:default;
-  border:5pt solid .FFF;
+  border:5pt solid #FFF;
   border-radius: 20px;
-  width: 300px;
-  height: 220px;
-  background-color: .000;
+  width: 240px;
+  height: 180px;
+  background-color: #000;
 }
 
-.Network_signup{
-  background-color: .FF0000;
+.index__intro__signup__process__window__network{
+  background-color: #FF0000;
 }
 
-.Onsite_signup{
-  background-color: .0066FF;
+.index__intro__signup__process__window__onsite{
+  background-color: #0066FF;
 }
 
-.signup_window h2{
+.index__intro__signup__process__window__title{
   color:.EEE;
   font-family: 微軟正黑體;
 }
 
-.Network_text, .Onsite_text{
+.index__intro__signup__process__window__network__text, .index__intro__signup__process__window__onsite__text{
   display:none;
   border-radius: 20px;
-  width:400px;
+  width:320px;
   word-wrap: break-word;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 220px;
+  height: 180px;
   padding: 0 20px;
-  border: 2pt solid .000;
+  border: 2pt solid #000;
 }
 
-.signup .Note{
+.index__intro__signup__process__note{
   text-align: left;
-  width:700px;
-  margin: 0 20px;
+  width:480px;
+  margin:5px 10px 0px 10px;
   box-sizing: border-box;
-  padding-left: 90px;
+  height: 40px;
 }
 
 .hexagon{

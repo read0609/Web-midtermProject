@@ -25,17 +25,17 @@ $(document).ready(function() {
   });
 
   //registration
-  var NetReg = $(".Network_registration");
-  var OnsiteReg = $(".Onsite_registration");
-  var NetText = $(".Network_text");
-  var OnsiteText = $(".Onsite_text");
-  var RegWin = $(".singup_window");
+  var NetReg = $(".index__intro__signup__process__window__network");
+  var OnsiteReg = $(".index__intro__signup__process__window__onsite");
+  var NetText = $(".index__intro__signup__process__window__network__text");
+  var OnsiteText = $(".index__intro__signup__process__window__onsite__text");
+  var RegWin = $(".index__intro__signup__process__window");
   var NetRegTouch = false;
   OnsiteRegTouch = false;
 
   function HoverReg(self, selfT, other) {
     self.css({
-      "width": "220px",
+      "width": "180px",
       "padding": "0 10px"
     });
     selfT.css("display", "flex");
@@ -45,8 +45,8 @@ $(document).ready(function() {
   function ResetReg(Reset, self, selfT, other) {
     if (Reset) {
       self.css({
-        "width": "300px",
-        "padding": "0 60px 0 60px"
+        "width": "240px",
+        "padding": "0 60px"
       });
       selfT.css("display", "none");
       other.css("display", "flex");
