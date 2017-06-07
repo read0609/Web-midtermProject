@@ -1,15 +1,14 @@
 
-.index__intro__singup{
+.index__intro__signup{
   width: 100%;
   height: 400px;
   box-sizing: border-box;
-  padding:0 50px;
   display:flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.singup__countdown{
+.index__intro__signup__countdown{
   height: 300px;
   width:700px;
   display: flex;
@@ -18,12 +17,12 @@
   justify-content: center;
 }
 
-.countdown__title{
+.index__intro__signup__countdown__title{
   font-family: Microsoft JhengHei;
-  color: 003377;
+  color: #003377;
 }
 
-.countdown__main{
+.index__intro__signup__countdown__main{
   height: 200px;
   width:700px;
   display: flex;
@@ -33,7 +32,7 @@
   margin: 10px 0;
 }
 
-.countdown__main__date{
+.index__intro__signup__countdown__main__date{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,33 +42,26 @@
   margin: 0 5px;
 }
 
-.countdown__date .date__unit,.countdown__time{
+.index__intro__signup__countdown__main__date__unit,.index__intro__signup__countdown__time{
   font-family: 微軟正黑體;
 }
 
-
-
-.countdown__date .date__unit{
+.index__intro__signup__countdown__main__date__unit{
   margin: 15px 0;
-}
-
-
-
-.singup__countdown .Date .unit{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 180px;
   border-radius: 10px;
-  border: 2px solid .000;
-  background-color: .000;
+  border: 2px solid #000;
+  background-color: #000;
   color: .FFF;
   font-size: 50px;
   font-family: Microsoft JhengHei;
 }
 
-.singup__process{
+.signup__process{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +70,7 @@
   height: 300px;
 }
 
-.singup_window{
+.signup_window{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -87,7 +79,7 @@
   height: 220px;
 }
 
-.Network_singup,.Onsite_singup{
+.Network_signup,.Onsite_signup{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,15 +92,15 @@
   background-color: .000;
 }
 
-.Network_singup{
+.Network_signup{
   background-color: .FF0000;
 }
 
-.Onsite_singup{
+.Onsite_signup{
   background-color: .0066FF;
 }
 
-.singup_window h2{
+.signup_window h2{
   color:.EEE;
   font-family: 微軟正黑體;
 }
@@ -126,7 +118,7 @@
   border: 2pt solid .000;
 }
 
-.singup .Note{
+.signup .Note{
   text-align: left;
   width:700px;
   margin: 0 20px;

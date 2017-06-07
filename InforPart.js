@@ -3,7 +3,7 @@ $(document).ready(function() {
   var startDay = new Date();
   var endDay = new Date('2017/11/06 08:00');
   var spantime = (endDay - startDay) / 1000;
-  var dates = $(".date__num");
+  var dates = $(".index__intro__signup__countdown__main__date__num");
   $(this).everyTime('1s', function(i) {
     spantime--;
     var d = Math.floor(spantime / (24 * 3600));
