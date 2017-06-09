@@ -138,7 +138,10 @@ body, footer {
 }
 
 
-/*===========header================*/
+/*===========headerEnd================*/
+
+
+/*===========footer================*/
 
 .index__majorPic img {
   max-width: 100%;
@@ -235,10 +238,10 @@ footer a {
 }
 
 
-/*---------------------------------------------------------*/
+/*------------------------footerEnd---------------------------------*/
 
 
-/*--關於赤弦-與-贊助廠商-------------------------------------------------*/
+/*--關於赤弦--------------------------------------------------*/
 
 .index__about {
   width: 100%;
@@ -264,7 +267,7 @@ footer a {
   justify-content: center;
 }
 
-.index__about__square1 .index_about_square_title, .index__about__square2 .index_about_square_title, .index__about__square3 .index_about_square_title, .index__about__square4 .index_about_square_title {
+.index_about_square_title {
   display: inline-block;
   font-size: 60px;
   z-index: 15;
@@ -287,7 +290,7 @@ footer a {
   border-radius: 5px;
 }
 
-.index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
+.index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4, .index__arr__up5, .index__arr__up6, .index__arr__up7, .index__arr__up8, .index__arr__up9 {
   bottom: 0;
   right: 0;
   position: absolute;
@@ -297,7 +300,7 @@ footer a {
   display: none;
 }
 
-.index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
+.index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4, .index__arr__down5, .index__arr__down6, .index__arr__down7, .index__arr__down8, .index__arr__down9 {
   top: 0;
   right: 0;
   position: absolute;
@@ -320,7 +323,7 @@ footer a {
   border-radius: 10px;
 }
 
-.content_display {
+.content--display {
   opacity: 0.9;
   visibility: visible;
   z-index: 20;
@@ -335,19 +338,17 @@ footer a {
   letter-spacing: 2px;
 }
 
+
+/*----關於赤弦End------------*/
+
+
+/*----贊助廠商-------------*/
+
 .index__support__nine_pic {
   margin-top: 50px;
 }
 
-.index__support__nine_pic__sup1:hover .sup1__data,
-.index__support__nine_pic__sup2:hover .sup2__data,
-.index__support__nine_pic__sup3:hover .sup3__data,
-.index__support__nine_pic__sup4:hover .sup4__data,
-.index__support__nine_pic__sup5:hover .sup5__data,
-.index__support__nine_pic__sup6:hover .sup6__data,
-.index__support__nine_pic__sup7:hover .sup7__data,
-.index__support__nine_pic__sup8:hover .sup8__data,
-.index__support__nine_pic__sup9:hover .sup9__data {
+.index__support__nine_pic__sup1:hover .sup1__data, .index__support__nine_pic__sup2:hover .sup2__data, .index__support__nine_pic__sup3:hover .sup3__data, .index__support__nine_pic__sup4:hover .sup4__data, .index__support__nine_pic__sup5:hover .sup5__data, .index__support__nine_pic__sup6:hover .sup6__data, .index__support__nine_pic__sup7:hover .sup7__data, .index__support__nine_pic__sup8:hover .sup8__data, .index__support__nine_pic__sup9:hover .sup9__data {
   opacity: 0.9;
   visibility: visible;
 }
@@ -365,6 +366,11 @@ footer a {
   border-radius: 10px;
 }
 
+.sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
+  opacity: 0.9;
+  visibility: visible;
+}
+
 .sup1__data p, .sup2__data p, .sup3__data p, .sup4__data p, .sup5__data p, .sup6__data p, .sup7__data p, .sup8__data p, .sup9__data p {
   padding: 0px;
   margin: 30px;
@@ -374,11 +380,7 @@ footer a {
   letter-spacing: 2px;
 }
 
-.index__support__nine_pic__sup1, .index__support__nine_pic__sup2,
-.index__support__nine_pic__sup3, .index__support__nine_pic__sup4,
-.index__support__nine_pic__sup5, .index__support__nine_pic__sup6,
-.index__support__nine_pic__sup7, .index__support__nine_pic__sup8,
-.index__support__nine_pic__sup9 {
+.index__support__nine_pic__sup1, .index__support__nine_pic__sup2, .index__support__nine_pic__sup3, .index__support__nine_pic__sup4, .index__support__nine_pic__sup5, .index__support__nine_pic__sup6, .index__support__nine_pic__sup7, .index__support__nine_pic__sup8, .index__support__nine_pic__sup9 {
   width: 100%;
   position: relative;
   height: 400px;
@@ -434,25 +436,19 @@ footer a {
   background-size: 75%;
 }
 
-.sup1_data p {
-  margin-top: 50px;
-  font-size: 15px;
-}
+
+/*--------------贊助廠商End---------------------------------------*/
 
 
-/*-----------------------------------------------------*/
-
-
-/*歷年回顧---------------------------------------*/
+/*--------------歷年回顧---------------------------------------*/
 
 .review_main {
   margin-bottom: 0px;
 }
 
 .index__review__youtube {
-  height: 200px;
   width: 33.332%;
-  background-size: 50% 80%;
+  -background-size: 50% 80%;
   margin: 0px auto;
   position: relative;
 }
@@ -460,19 +456,18 @@ footer a {
 .index__review__youtube img {
   display: block;
   margin: 0px auto;
-  width: 60%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
 }
 
 .index__review__gif {
-  width: 50%;
+  width: 70%;
   height: 500px;
-  margin: -50px auto;
-  .background-color: #FAE0E0;
+  margin: auto;
+  -background-color: #FAE0E0;
   position: relative;
-  margin-top: -100px;
 }
 
 .index__review__gif__gif1, .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
@@ -509,16 +504,15 @@ footer a {
 }
 
 .index__review__flickr {
-  height: 200px;
-  width: 33.332%;
+  width: 30%;
   margin: 0px auto;
 }
 
 .index__review__flickr img {
   display: block;
   margin: 0px auto;
-  width: 50%;
-  height: 70%;
+  width: 70%;
+  height: auto;
   margin-bottom: 0px;
   margin-top: 50px;
 }
@@ -527,10 +521,10 @@ footer a {
   margin: 0px auto;
   height: 450px;
   position: relative;
-  margin-top: 50px;
   overflow: visible;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .index__review__flickr__animation div {
@@ -540,6 +534,7 @@ footer a {
   margin: 0px auto;
   animation: round 25s linear infinite;
 }
+
 @keyframes round {
   4% {
     opacity: 1;
@@ -579,10 +574,10 @@ footer a {
 }
 
 
-/*-----------------------------------------------------*/
+/*---------------歷年回顧End--------------------------------------*/
 
 
-/*聯絡我們*/
+/*------------聯絡我們----------------*/
 
 .message_l {
   width: 50%;
@@ -640,7 +635,14 @@ footer a {
   font-size: 20px;
 }
 
+
+/*--------聯絡我們End-------------*/
+
+
+/*---------平板電腦設計----------*/
+
 @media only screen and (max-width: 768px) {
+  /*--相同部分--------------------------------------------------*/
   .common__container {
     max-width: 768px;
     padding-left: 15px;
@@ -673,6 +675,8 @@ footer a {
     display: flex;
     justify-content: center;
   }
+  /*--相同部分End--------------------------------------------------*/
+  /*--關於赤弦--------------------------------------------------*/
   .index__majorPic {
     background-position: center;
     background-size: contain;
@@ -690,9 +694,29 @@ footer a {
     margin-top: 0;
     margin-bottom: 50px;
   }
+  /*--關於赤弦End--------------------------------------------------*/
+  /*--贊助廠商--------------------------------------------------*/
+  .col-sm-4 {
+    width: 100%;
+  }
+  /*--贊助廠商End--------------------------------------------------*/
+  /*--歷年回顧--------------------------------------------------*/
+  .index__review__flickr img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .index__review__gif {
+    width: 90%;
+  }
+  .index__review__flickr__animation div img{
+    width:100%;
+    height: auto;
+  }
+  /*--贊助廠商End--------------------------------------------------*/
 }
 
 @media only screen and (max-width: 480px) {
+  /*--相同部分--------------------------------------------------*/
   .common__container {
     max-width: 480px;
   }
@@ -753,21 +777,50 @@ footer a {
   .footer__right p {
     font-size: 11px;
   }
-  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4 {
+  /*--相同部分End--------------------------------------------------*/
+  /*--關於赤弦--------------------------------------------------*/
+  .index__arr__down1, .index__arr__down2, .index__arr__down3, .index__arr__down4, .index__arr__down5, .index__arr__down6, .index__arr__down7, .index__arr__down8, .index__arr__down9 {
     display: block;
     cursor: pointer;
   }
   .index__arr__down--hide {
     display: none;
   }
-  .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
+  .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4, .index__arr__up5, .index__arr__up6, .index__arr__up7, .index__arr__up8, .index__arr__u94 {
     display: none;
     cursor: pointer;
   }
   .index__arr__down--display {
     display: block;
   }
-  .index__about__square1__content1, .index__about__square2__content2, .index__about__square3__content3, .index__about__square4__content4 {
-    pointer-events: none;
+  /*--關於赤弦--------------------------------------------------*/
+  /*--歷年回顧--------------------------------------------------*/
+  .index__review__youtube {
+    width: 50%;
   }
+  .index__review__gif {
+    height: 250px;
+  }
+  .index__review__gif__gif1 {
+    width: 100%;
+  }
+  .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
+    display: none;
+  }
+  .index__review__gif {
+    margin-top: -35px;
+  }
+  .index__review__flickr {
+    width: 45%;
+    margin-top: 90px;
+  }
+  .index__review__flickr__animation div img{
+    width:100%;
+    height: auto;
+  }
+  .index__review__flickr__animation{
+    margin-top: 20px;
+    height: 300px;
+  }
+  /*--歷年回顧End--------------------------------------------------*/
 }
