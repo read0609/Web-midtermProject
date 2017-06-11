@@ -133,7 +133,8 @@
   height: 40px;
 }
 
-.hexagon{
+.index__intro__hexagon{
+  margin: 30px 0;
   width:100%;
   height: 500px;
   display:flex;
@@ -141,33 +142,41 @@
   justify-content: center;
 }
 
-.hexagon::after{
+.index__intro__hexagon::after{
   clear:both;
 }
 
-.hexagon .left_Tri,.hexagon .right_Tri{
-  width: 15%;
+.index__intro__hexagon__triLeft{
+  width: 8%;
   height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.hexagon .left_Tri p,.hexagon .right_Tri p{
-  font-size: 100px;
+.index__intro__hexagon__triRight{
+  width: 8%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.index__intro__hexagon__tri__arrow{
+  font-size: 50px;
   font-family: Arial;
   cursor: pointer;
 }
 
-.hexagon .mid_squre{
+.index__intro__hexagon__mainSqure{
   float: left;
-  width: 70%;
+  width: 84%;
   height: 500px;
   border-radius: 20px;
-  border: 2pt solid .000;
+  border: 2pt solid #000;
 }
 
-.hexagon .mid_squre .Group_intr{
+.index__intro__hexagon__mainSqure__groupIntr{
   display: none;
   justify-content: center;
   align-items: center;
@@ -178,13 +187,13 @@
   padding: 0 20px;
 }
 
-.hexagon .mid_squre .Group_intr h2{
+.index__intro__hexagon__mainSqure__groupIntr__title{
   font-size: 50px;
   font-family: Microsoft JhengHei;
   margin: 20px 0;
 }
 
-.hexagon .mid_squre .Group_intr .content{
+.index__intro__hexagon__mainSqure__groupIntr__content{
   display: flex;
   width: 100%;
   height: 350px;
@@ -193,51 +202,53 @@
   padding-top: 8px;
 }
 
-.hexagon .mid_squre .Group_intr .content p{
+.index__intro__hexagon__mainSqure__groupIntr__content p{
   font-size: 25px;
   line-height: 45px;
   font-family: 微軟正黑體;
 }
 
-.otherIntro{
+.index__intro__otherIntro{
   width: 100%;
-  height: 450px;
-  padding:20px 8vw 20px 8vw;
+  height: 350px;
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.equipmentIntro ,.checkIntro ,.scoreIntro{
+.index__intro__otherIntro__equipmentIntro ,.index__intro__otherIntro__checkIntro ,.index__intro__otherIntro__scoreIntro{
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction:column;
-  width:300px;
+  box-sizing: border-box;
+  width: 300px;
   height: 300px;
   border-radius: 150px;
-  border: 2px solid .000;
+  border: 2px solid #000;
   text-align: center;
-  margin: 20px auto;
+  //margin: 0 50px;
   font-family: 微軟正黑體;
   font-size: 25px;
-  padding: 30px 60px;
+  padding: 0 60px;
 }
 
-.equipmentIntro{
-  background-color: .666666;
+.index__intro__otherIntro__equipmentIntro{
+  background-color: #666666;
+  //margin-left: 0;
 }
 
-.scoreIntro{
-  background-color: 	.CCFF99;
+.index__intro__otherIntro__scoreIntro{
+  background-color: #CCFF99;
+  //margin-right: 0;
 }
 
-.otherIntro h2,.otherIntro h4{
+.index__intro__otherIntro__mainTitle,.index__intro__otherIntro__subTitle{
   margin: 20px 0;
 }
 
-.otherIntro .text_equipmentIntro,.otherIntro .text_checkIntro,.otherIntro .text_scoreIntro{
+.index__intro__otherIntro__equipmentIntro__text,.index__intro__otherIntro__checkIntro__text,.index__intro__otherIntro__scoreIntro__text{
   display: none;
   height: 300px;
   width:80%;
@@ -245,33 +256,33 @@
   align-items: center;
   justify-content:flex-start;
   padding: 0 30px;
-  border:2px solid .EEE;
-  color: .EEE;
-  background-color: .000;
+  border:2px solid #EEE;
+  color: #EEE;
+  background-color: #000;
   border-radius: 10px;
 }
 
 footer{
   clear: both;
-  background-color: .000;
+  background-color: #000;
   max-width: auto;
   height:80px;
   margin-top:20px;
 }
 footer p{
-  color:.EEE;
+  color:#EEE;
   display: inline-block;
   margin-right: 10px;
   font-size: 15px;
 }
 footer a{
-  color:.EEE;
+  color:#EEE;
   text-decoration: none;
   font-size: 18px;
   margin-top: -30px;
 }
 .line2{
-  border-left:solid 1px .EEE;
+  border-left:solid 1px #EEE;
   height: 13px;
   display: inline-block;
   margin-right: 10px;
@@ -303,7 +314,7 @@ img.share_btn{
 }
 .share_icons{
   padding: 5px 20px;
-  background-color: .ddd;
+  background-color: #ddd;
   display: inline-block;
   border-radius: 5px;
   opacity: 0;

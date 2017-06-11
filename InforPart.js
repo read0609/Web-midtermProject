@@ -71,12 +71,12 @@ $(document).ready(function() {
   });
 
   //Introduction
-  var lefTri = $(".left_Tri");
-  var rigTri = $(".right_Tri");
-  var GroupIntr = $(".Group_intr");
-  var changeL = $(".left_Tri p");
-  var changeR = $(".right_Tri p");
-  var he = $(".hexagon");
+  var lefTri = $(".index__intro__hexagon__triLeft");
+  var rigTri = $(".index__intro__hexagon__triRight");
+  var GroupIntr = $(".index__intro__hexagon__mainSqure__groupIntr");
+  var changeL = $(".index__intro__hexagon__tri__arrow").eq(0);
+  var changeR = $(".index__intro__hexagon__tri__arrow").eq(1);
+  var he = $(".index__intro__hexagon");
   var IndexIntr = 0;
   GroupIntr.eq(IndexIntr).css("display", "flex");
 
@@ -98,13 +98,13 @@ $(document).ready(function() {
 
 
   //otherIntroduce
-  var scoIntr = $(".scoreIntro");
-  var equipIntr = $(".equipmentIntro");
-  var checkIntr = $(".checkIntro");
-  var scoText = $(".text_scoreIntro");
-  var equipText = $(".text_equipmentIntro");
-  var checkText = $(".text_checkIntro");
-  var otherIntro = $(".otherIntro");
+  var scoIntr = $(".index__intro__otherIntro__scoreIntro");
+  var equipIntr = $(".index__intro__otherIntro__equipmentIntro");
+  var checkIntr = $(".index__intro__otherIntro__checkIntro");
+  var scoText = $(".index__intro__otherIntro__scoreIntro__text");
+  var equipText = $(".index__intro__otherIntro__equipmentIntro__text");
+  var checkText = $(".index__intro__otherIntro__checkIntro__text");
+  var otherIntro = $(".index__intro__otherIntro");
   var scoIntrTouch = false,
     equipIntrTouch = false,
     checkIntrTouch = false;
@@ -112,8 +112,8 @@ $(document).ready(function() {
   function HoverIntr(self, selfT, other) {
     self.css({
       "font-size": "15px",
-      "width": "150px",
-      "borderRadius": "10px",
+      "width": "200px",
+      "borderRadius": "15px",
     });
     selfT.css("display", "flex");
     other[0].css("display", "none");
