@@ -1,181 +1,92 @@
-*{
-  .border:solid 1px rgba(0,0,0,0.5);
-  box-sizing: border-box;
-  transition: all .5s;
-}
-ul, li, a, div,p,h2{
-  padding: 0px;
-  margin: 0px;
-}
-body,footer{
-  margin: 0px;
-  padding: 0px;
-}
 
-.container{
-  max-width: 1170px;
-  overflow: auto;
-  justify-content: space-around;
-  margin:0 auto;
-}
-
-.header{
-  background-color: #000;
-  width:100%;
-  height:100px;
-  position: fixed;
-  top:0px;
-  z-index: 1000;
-  overflow: auto;
-
-}
-.nav{
-  overflow:auto;
-}
-h1 a{
-  text-decoration: none;
-  color:#EEE;
-}
-h1{
-  display:inline-block;
-  float:left;
-  color:#EEE;
-  font-family: Microsoft JhengHei;
-  margin-top:28px;
-}
-
-.nav ul li{
-  display:inline-block;
-  float:right;
-  font-family: Arial;
-  margin-top: 40px;
-  margin-left : 40px;
-}
-.nav a{
-    text-decoration: none;
-    color:#EEE;
-    font-weight: bolder;
-    font-size:14px;
-}
-.majorPic{
-  max-width: 100%;
-  height: 780px;
-  margin-top: -50px;
-  background-image: url("image/cover.jpg");
-  background-size: cover;
-  background-position: top;
-  .background-attachment: fixed;
-}
-.title_text{
+.index__intro__signup{
   width: 100%;
-  height: 250px;
-}
-
-.title_text h2{
-  margin-top: 100px;
-  font-size: 50px;
-  font-family: Microsoft JhengHei;
-  text-align: center;
-  color:#003377;
-  margin-bottom: 20px;
-}
-
-.title_image{
-  display: block;
-  margin: auto;
-}
-
-.title_text p{
-  text-align: center;
-  font-size: 15px;
-  line-height: 30px;
-}
-
-.Registration{
-  max-width: 100vw;
-  height: 400px;
+  height: 270px;
   box-sizing: border-box;
-  padding:0 50px;
   display:flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#Registration_reciprocal{
-  height: 300px;
-  width:700px;
+.index__intro__signup__countdown{
+  height: 250px;
+  width:520px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#Registration_reciprocal h2{
+.index__intro__signup__countdown__title{
   font-family: Microsoft JhengHei;
   color: #003377;
+  margin: 0.5px 0;
 }
 
-#Registration_reciprocal h3,p{
-  font-family: 微軟正黑體;
-}
-
-#Registration_reciprocal #reciprocal{
-  height: 200px;
-  width:700px;
+.index__intro__signup__countdown__main{
+  height: 175px;
+  width:520px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-#Registration_reciprocal #reciprocal .Date h3{
-  margin: 15px 0;
-}
-
-#Registration_reciprocal #reciprocal .Date{
+.index__intro__signup__countdown__main__date{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 200px;
+  width: 120px;
+  height: 170px;
   margin: 0 5px;
 }
 
-#Registration_reciprocal .Date .unit{
+.index__intro__signup__countdown__main__date__num{
+  margin: 10px 0;
+  font-family: 微軟正黑體;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 180px;
+  width: 120px;
+  height: 160px;
   border-radius: 10px;
   border: 2px solid #000;
   background-color: #000;
   color: #FFF;
-  font-size: 50px;
+  font-size: 25px;
   font-family: Microsoft JhengHei;
 }
 
-.Registration_Process{
+.index__intro__signup__countdown__main__date__unit{
+  margin: 5px 0;
+}
+
+.index__intro__signup__countdown__time{
+  font-family: 微軟正黑體;
+}
+
+.index__intro__signup__process{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:700px;
-  height: 300px;
+  width:500px;
+  height: 230px;
+  margin-top:20px;
 }
 
-#Registration_window{
+.index__intro__signup__process__window{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 220px;
+  width: 500px;
+  height: 180px;
 }
 
-#Network_registration,#Onsite_registration{
+.index__intro__signup__process__window__network,.index__intro__signup__process__window__onsite{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,46 +94,47 @@ h1{
   cursor:default;
   border:5pt solid #FFF;
   border-radius: 20px;
-  width: 300px;
-  height: 220px;
+  width: 240px;
+  height: 180px;
   background-color: #000;
 }
 
-#Network_registration{
+.index__intro__signup__process__window__network{
   background-color: #FF0000;
 }
 
-#Onsite_registration{
+.index__intro__signup__process__window__onsite{
   background-color: #0066FF;
 }
 
-#Registration_window h2{
-  color:#EEE;
+.index__intro__signup__process__window__title{
+  color:.EEE;
   font-family: 微軟正黑體;
 }
 
-#Network_text, #Onsite_text{
+.index__intro__signup__process__window__network__text, .index__intro__signup__process__window__onsite__text{
   display:none;
   border-radius: 20px;
-  width:400px;
+  width:320px;
   word-wrap: break-word;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 220px;
+  height: 180px;
   padding: 0 20px;
   border: 2pt solid #000;
 }
 
-.Registration .Note{
+.index__intro__signup__process__note{
   text-align: left;
-  width:700px;
-  margin: 0 20px;
+  width:480px;
+  margin:5px 10px 0px 10px;
   box-sizing: border-box;
-  padding-left: 90px;
+  height: 40px;
 }
 
-#hexagon{
+.index__intro__hexagon{
+  margin: 30px 0;
   width:100%;
   height: 500px;
   display:flex;
@@ -230,33 +142,41 @@ h1{
   justify-content: center;
 }
 
-#hexagon::after{
+.index__intro__hexagon::after{
   clear:both;
 }
 
-#hexagon #left_Tri,#hexagon #right_Tri{
-  width: 15%;
+.index__intro__hexagon__triLeft{
+  width: 8%;
   height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-#hexagon #left_Tri p,#hexagon #right_Tri p{
-  font-size: 100px;
+.index__intro__hexagon__triRight{
+  width: 8%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.index__intro__hexagon__tri__arrow{
+  font-size: 50px;
   font-family: Arial;
   cursor: pointer;
 }
 
-#hexagon #mid_squre{
+.index__intro__hexagon__mainSqure{
   float: left;
-  width: 70%;
+  width: 84%;
   height: 500px;
   border-radius: 20px;
   border: 2pt solid #000;
 }
 
-#hexagon #mid_squre .Group_intr{
+.index__intro__hexagon__mainSqure__groupIntr{
   display: none;
   justify-content: center;
   align-items: center;
@@ -267,13 +187,13 @@ h1{
   padding: 0 20px;
 }
 
-#hexagon #mid_squre .Group_intr h2{
+.index__intro__hexagon__mainSqure__groupIntr__title{
   font-size: 50px;
   font-family: Microsoft JhengHei;
   margin: 20px 0;
 }
 
-#hexagon #mid_squre .Group_intr .content{
+.index__intro__hexagon__mainSqure__groupIntr__content{
   display: flex;
   width: 100%;
   height: 350px;
@@ -282,51 +202,53 @@ h1{
   padding-top: 8px;
 }
 
-#hexagon #mid_squre .Group_intr .content p{
+.index__intro__hexagon__mainSqure__groupIntr__content p{
   font-size: 25px;
   line-height: 45px;
   font-family: 微軟正黑體;
 }
 
-#otherIntro{
+.index__intro__otherIntro{
   width: 100%;
-  height: 450px;
-  padding:20px 8vw 20px 8vw;
+  height: 350px;
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-#equipmentIntro ,#checkIntro ,#scoreIntro{
+.index__intro__otherIntro__equipmentIntro ,.index__intro__otherIntro__checkIntro ,.index__intro__otherIntro__scoreIntro{
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction:column;
-  width:300px;
+  box-sizing: border-box;
+  width: 300px;
   height: 300px;
   border-radius: 150px;
   border: 2px solid #000;
   text-align: center;
-  margin: 20px auto;
+  //margin: 0 50px;
   font-family: 微軟正黑體;
   font-size: 25px;
-  padding: 30px 60px;
+  padding: 0 60px;
 }
 
-#equipmentIntro{
+.index__intro__otherIntro__equipmentIntro{
   background-color: #666666;
+  //margin-left: 0;
 }
 
-#scoreIntro{
-  background-color: 	#CCFF99;
+.index__intro__otherIntro__scoreIntro{
+  background-color: #CCFF99;
+  //margin-right: 0;
 }
 
-#otherIntro h2,#otherIntro h4{
+.index__intro__otherIntro__mainTitle,.index__intro__otherIntro__subTitle{
   margin: 20px 0;
 }
 
-#otherIntro #text_equipmentIntro,#otherIntro #text_checkIntro,#otherIntro #text_scoreIntro{
+.index__intro__otherIntro__equipmentIntro__text,.index__intro__otherIntro__checkIntro__text,.index__intro__otherIntro__scoreIntro__text{
   display: none;
   height: 300px;
   width:80%;

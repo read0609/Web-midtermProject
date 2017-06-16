@@ -1,10 +1,9 @@
 $(document).ready(function() {
-  //Registration_reciprocal
-  //var reciprocal = $("Registration_reciprocal");
+
   var startDay = new Date();
   var endDay = new Date('2017/11/06 08:00');
   var spantime = (endDay - startDay) / 1000;
-  var units = $(".unit");
+  var dates = $(".index__intro__signup__countdown__main__date__num");
   $(this).everyTime('1s', function(i) {
     spantime--;
     var d = Math.floor(spantime / (24 * 3600));
@@ -13,30 +12,30 @@ $(document).ready(function() {
     var s = Math.floor(spantime % 60);
 
     if (spantime > 0) {
-      units.eq(0).text(d);
-      units.eq(1).text(h);
-      units.eq(2).text(m);
-      units.eq(3).text(s);
+      dates.eq(0).text(d);
+      dates.eq(1).text(h);
+      dates.eq(2).text(m);
+      dates.eq(3).text(s);
     } else { // 避免倒數變成負的
-      units.eq(0).text(0);
-      units.eq(1).text(0);
-      units.eq(2).text(0);
-      units.eq(3).text(0);
+      dates.eq(0).text(0);
+      dates.eq(1).text(0);
+      dates.eq(2).text(0);
+      dates.eq(3).text(0);
     }
   });
 
   //registration
-  var NetReg = $("#Network_registration");
-  var OnsiteReg = $("#Onsite_registration");
-  var NetText = $("#Network_text");
-  var OnsiteText = $("#Onsite_text");
-  var RegWin = $("#Registration_window");
+  var NetReg = $(".index__intro__signup__process__window__network");
+  var OnsiteReg = $(".index__intro__signup__process__window__onsite");
+  var NetText = $(".index__intro__signup__process__window__network__text");
+  var OnsiteText = $(".index__intro__signup__process__window__onsite__text");
+  var RegWin = $(".index__intro__signup__process__window");
   var NetRegTouch = false;
   OnsiteRegTouch = false;
 
   function HoverReg(self, selfT, other) {
     self.css({
-      "width": "220px",
+      "width": "180px",
       "padding": "0 10px"
     });
     selfT.css("display", "flex");
@@ -46,8 +45,8 @@ $(document).ready(function() {
   function ResetReg(Reset, self, selfT, other) {
     if (Reset) {
       self.css({
-        "width": "300px",
-        "padding": "0 60px 0 60px"
+        "width": "240px",
+        "padding": "0 60px"
       });
       selfT.css("display", "none");
       other.css("display", "flex");
@@ -72,12 +71,12 @@ $(document).ready(function() {
   });
 
   //Introduction
-  var lefTri = $("#left_Tri");
-  var rigTri = $("#right_Tri");
-  var GroupIntr = $(".Group_intr");
-  var changeL = $("#left_Tri p");
-  var changeR = $("#right_Tri p");
-  var he = $("#hexagon");
+  var lefTri = $(".index__intro__hexagon__triLeft");
+  var rigTri = $(".index__intro__hexagon__triRight");
+  var GroupIntr = $(".index__intro__hexagon__mainSqure__groupIntr");
+  var changeL = $(".index__intro__hexagon__tri__arrow").eq(0);
+  var changeR = $(".index__intro__hexagon__tri__arrow").eq(1);
+  var he = $(".index__intro__hexagon");
   var IndexIntr = 0;
   GroupIntr.eq(IndexIntr).css("display", "flex");
 
@@ -99,13 +98,13 @@ $(document).ready(function() {
 
 
   //otherIntroduce
-  var scoIntr = $("#scoreIntro");
-  var equipIntr = $("#equipmentIntro");
-  var checkIntr = $("#checkIntro");
-  var scoText = $("#text_scoreIntro");
-  var equipText = $("#text_equipmentIntro");
-  var checkText = $("#text_checkIntro");
-  var otherIntro = $("#otherIntro");
+  var scoIntr = $(".index__intro__otherIntro__scoreIntro");
+  var equipIntr = $(".index__intro__otherIntro__equipmentIntro");
+  var checkIntr = $(".index__intro__otherIntro__checkIntro");
+  var scoText = $(".index__intro__otherIntro__scoreIntro__text");
+  var equipText = $(".index__intro__otherIntro__equipmentIntro__text");
+  var checkText = $(".index__intro__otherIntro__checkIntro__text");
+  var otherIntro = $(".index__intro__otherIntro");
   var scoIntrTouch = false,
     equipIntrTouch = false,
     checkIntrTouch = false;
@@ -113,8 +112,8 @@ $(document).ready(function() {
   function HoverIntr(self, selfT, other) {
     self.css({
       "font-size": "15px",
-      "width": "150px",
-      "borderRadius": "10px",
+      "width": "200px",
+      "borderRadius": "15px",
     });
     selfT.css("display", "flex");
     other[0].css("display", "none");
