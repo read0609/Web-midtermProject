@@ -1,0 +1,19 @@
+/*----slideShow----*/
+.index__majorPic{
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+  @mixin atMedium{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  @mixin atSmall{
+    margin-top: 0px;
+  }
+}
+/*----slideShowEND----*/

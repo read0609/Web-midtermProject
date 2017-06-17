@@ -74,15 +74,14 @@ body, footer {
   width: 8.332%;
 }
 
-
-/*===========header================*/
-
 .common__container {
   max-width: 1170px;
   -overflow: auto;
   justify-content: space-around;
   margin: 0 auto;
 }
+
+/*===========header================*/
 
 .header {
   background-color: #000;
@@ -584,27 +583,6 @@ footer a {
 
 
 /*---------------歷年回顧End-------------------------*/
-
-
-/*聯絡我們*/
-
-.message_l {
-  width: 50%;
-  height: 500px;
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-}
-
-.message_name {
-  display: inline-block;
-  margin: 0px;
-  margin-bottom: 25px;
-  margin-left: 50PX;
-  margin-top: 25PX;
-}
-
-
 /*-----------------最新消息-------------------*/
 
 .news_filed_name{
@@ -1145,7 +1123,7 @@ footer a {
 
 /*---------平板電腦設計----------*/
 @media only screen and (max-width: 1280px) {
-  
+
   .news_filed_name li {
     margin: 0;
     width: 22%;

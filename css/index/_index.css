@@ -1,0 +1,343 @@
+/*----首頁----*/
+.index_picture_one{
+  width: 100%;
+  height: 450px;
+  background-image: url("image/index_news.png");
+  background-size: cover;
+  -overflow: auto;
+  margin: 0px;
+}
+.index_picture_one_part_one{
+  display: inline-block;
+  width: 80%;
+  height: 400;
+  float: left;
+  margin-left: 50px;
+  @mixin atLarge{
+    display: inline-block;
+    width: 80%;
+    height: 400;
+    float: left;
+    margin-left: 50px;
+  }
+  @mixin atMedium{
+    -display:inline;
+    width: 100%;
+    height:400px;
+    margin: 0px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  @mixin atSmall{
+    -display:inline;
+    width: 100%;
+    height:400px;
+    margin: 0px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+}
+.index_picture_one_part_one h2{
+  color:rgba(39, 3, 140, 0.88);
+  font-size: 55px;
+  width: 80%;
+  margin-top: 50px;
+  @mixin atLarge{
+    color:rgba(39, 3, 140, 0.88);
+    font-size: 55px;
+    width: 80%;
+    margin-top: 50px;
+  }
+  @mixin atMedium{
+    color:rgba(39, 3, 140, 0.88);
+    font-size: 35px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  @mixin atSmall{
+    color:rgba(39, 3, 140, 0.88);
+    font-size: 35px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.index_picture_one_text{
+  border-bottom: 1px dotted rgba(66, 60, 83, 0.88);
+  width: 50%;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  @mixin atLarge{
+    border-bottom: 1px dotted white;
+    width: 80%;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  @mixin atMedium{
+    border-bottom: 1px dotted white;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+  @mixin atSmall{
+    border-bottom: 1px dotted white;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.index_picture_one_text:hover{
+  transform: scale(0.8);
+}
+.index_picture_one_button{
+  display:block;
+  width: 10%;
+  height: 30px;
+  margin-left: 430px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding-left:20px;
+  padding-top: 3px;
+  font-size: 15px;
+  @mixin atLarge{
+    display:block;
+    width: 20%;
+    height: 30px;
+    margin-left: 50%;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 0%;
+    padding-left:5%;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+  @mixin atMedium{
+    display:block;
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding:0px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+  @mixin atSmall{
+    display:block;
+    width: 50%;
+    height: 30px;
+    margin-left: 110px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding:0px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+}
+.index_picture_one_button:hover{
+  border: 2px solid gray;
+  font-size: 15px;
+  color: gray;
+  text-decoration: none;
+}
+.index_picture_two{
+  width: 100%;
+  height: 500px;
+  background-image: url("image/index_pic_two.png");
+  background-size: cover;
+  margin: 0px;
+  overflow: auto;
+}
+.index_picture_two_part_one{
+  -margin-top: 0px;
+  text-align: center;
+  margin-top: 200px;
+}
+.index_picture_two_part_one a{
+  color: rgba(246, 255, 148, 1);
+  font-size: 50px;
+}
+.index_picture_two_part_two{
+  margin: 0px;
+  text-align: center;
+  margin-top: 20px;
+}
+.index_picture_two_part_two a{
+  color: rgba(246, 255, 148, 1);
+  font-size: 20px;
+}
+
+.index_picture_three{
+  width: 100%;
+  height: 280px;
+}
+.index_picture_three_left_one{
+  background-image: url("image/index_pic1.jpeg");
+  background-size:cover;
+  width: 50%;
+  height: 280px;
+  display:inline-block;
+}
+.index_picture_three_left_one_out{
+  width: 100%;
+  background: rgba(157, 188, 210, 0.8);
+  height: 280px;
+  display:inline-block;
+  transition: all .8s;
+}
+.index_picture_three_left_one_out:hover,.index_picture_three_left_two_out:hover{
+  background: rgba(157, 188, 210, 0);
+  text-align: center;
+
+}
+.index_picture_three_left_one_out:hover .index_picture_three_text,.index_picture_three_left_one_out:hover .index_picture_three_title
+,.index_picture_three_left_two_out:hover .index_picture_three_text,.index_picture_three_left_two_out:hover .index_picture_three_title
+,.index_picture_three_left_one_out:hover .index_line,.index_picture_three_left_two_out:hover .index_line{
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0);
+}
+.index_picture_three_right_one_out:hover,.index_picture_three_right_two_out:hover{
+  background: rgba(157, 188, 210, 0);
+  text-align: center;
+
+}
+.index_picture_three_right_one_out:hover .index_picture_three_text,.index_picture_three_right_one_out:hover .index_picture_three_title
+,.index_picture_three_right_two_out:hover .index_picture_three_text,.index_picture_three_right_two_out:hover .index_picture_three_title
+,.index_picture_three_right_one_out:hover .index_line,.index_picture_three_right_two_out:hover .index_line{
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0);
+}
+.index_picture_three_title{
+  color: black;
+  margin-top: 120px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.index_line{
+  border-bottom: 1px solid black;
+  border-width:thin;
+  width: 70px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 20px;
+}
+.index_picture_three_text{
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.index_picture_three_right_one{
+  background-image: url("image/index_pic2.jpeg");
+  background-size: cover;
+  width: 50%;
+  height: 280px;
+  -display: inline-block;
+  float: right;
+}
+.index_picture_three_right_one_out{
+  background: rgba(157, 164, 210, 0.8);
+  height: 280px;
+  display:inline-block;
+  transition: all .8s;
+  width: 100%;
+}
+.index_picture_three_right_one_out:hover{
+  background: rgba(157, 164, 210, 0);
+}
+.index_picture_three_center{
+  background-image: url("image/index_pic3.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+}
+.index_picture_three_center_out{
+  background: rgba(184, 184, 184, 0.8);
+  transition: all .8s;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+}
+.index_picture_three_center_out:hover{
+  background: rgba(184, 184, 184, 0);
+  text-align: center;
+}
+
+.index_picture_three_center_out:hover .index_picture_three_title,.index_picture_three_center_out:hover .index_picture_three_text
+,.index_picture_three_center_out:hover .index_line{
+  border-bottom: 1px solid rgba(255,255,255,0);
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.index_picture_three_left_two{
+  background-image: url("image/index_pic4.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 280px;
+  display: inline-block;
+}
+.index_picture_three_left_two_out{
+  background: rgba(210, 201, 157, 0.8);
+  height: 280px;
+  display:inline-block;
+  transition: all .8s;
+  width: 100%;
+}
+.index_picture_three_left_two_out:hover{
+  background: rgba(210, 201, 157, 0);
+}
+.index_picture_three_right_two{
+  background-image: url("image/index_pic5.jpeg");
+  background-size: cover;
+  width: 50%;
+  height: 280px;
+  float: right;
+}
+.index_picture_three_right_two_out{
+  background: rgba(164, 210, 157, 0.8);
+  height: 280px;
+  display:inline-block;
+  transition: all .8s;
+  width: 100%;
+}
+.index_picture_three_right_two_out:hover{
+  background: rgba(164, 210, 157, 0);
+}
+.index__majorPic img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+/*----最新消息END----*/

@@ -1,0 +1,14 @@
+/*----自動移除html元件padding and margin ----*/
+@import "normalize.css";
+/*----自動移除html元件padding and margin END----*/
+@import "./base/_mixins.css";
+@import "./base/_global.css";
+@import "./index/_index_header.css";
+@import "./index/_index_slideshow.css";
+@import "./index/_index_footer.css";
+@import "./index/_index_about.css";
+@import "./index/_index_intro.css";
+@import "./index/_index_new.css";
+@import "./index/_index_review.css";
+@import "./index/_index_support.css";
+@import "./index/_index.css";

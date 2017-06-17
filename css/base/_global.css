@@ -1,0 +1,106 @@
+/*----global----*/
+* {
+  -border: solid 1px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  transition: all .5s;
+}
+
+ul, li, a, div, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+body, footer {
+  margin: 0px;
+  padding: 0px;
+  font-family: 微軟正黑體;
+  background-color: #FFFAFA;
+}
+
+.common{
+
+  &__row{
+    width: 100%;
+    margin-right: -20px;
+    -margin: 0 auto;
+  }
+
+  &__col{
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    @mixin atSmall{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__container {
+    max-width: 1170px;
+    -overflow: auto;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    @mixin atMedium {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @mixin atSmall{
+      max-width: 480px;
+    }
+
+  }
+
+}
+
+.col-sm {
+  &-11 {
+    width: 91.662%;
+  }
+
+  &-10 {
+    width: 83.332%;
+  }
+
+  &-9 {
+    width: 75%;
+  }
+
+  &-8 {
+    width: 66.662%;
+  }
+
+  &-7 {
+    width: 58.331%;
+  }
+
+  &-6 {
+    width: 50%;
+    @mixin atMedium{
+      width: 100%;
+    }
+  }
+
+  &-5 {
+    width: 41.662%;
+  }
+
+  &-4 {
+    width: 33.332%;
+  }
+
+  &-3 {
+    width: 25%;
+  }
+
+  &-2 {
+    width: 16.662%;
+  }
+
+  &-1 {
+    width: 8.332%;
+  }
+}
+/*----globalEnd----*/

@@ -1,0 +1,120 @@
+/*----header----*/
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  overflow: auto;
+
+  @mixin atMedium{
+    overflow: visible;
+    height: 180px;
+  }
+  
+  @mixin atSmall{
+    height: auto;
+  }
+
+  &__title {
+    display: inline-block;
+    float: left;
+    color: #EEE;
+    font-family: Microsoft JhengHei;
+
+    @mixin atMedium{
+      width: auto;
+      height: auto;
+      display: block;
+      text-align: left;
+    }
+    @mixin atSmall{
+      line-height: 20px;
+    }
+
+    a {
+     text-decoration: none;
+     color: #EEE;
+     @mixin atSmall{
+       font-size: 24px;
+       width: auto;
+     }
+    }
+  }
+
+  &__nav {
+    float: right;
+    display: block;
+    @mixin atMedium{
+      width: 100%;
+      overflow: hidden;
+    }
+    @mixin atSmall{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: none;
+      top: 62.5px;
+      background-color: black;
+    }
+
+    a {
+      text-decoration: none;
+      color: #EEE;
+      font-weight: bolder;
+      font-size: 14px;
+    }
+
+    li {
+      overflow: auto;
+      display: inline-block;
+      font-family: Arial;
+      margin-top: 40px;
+      margin-left: 40px;
+      @mixin atMedium{
+        margin: 0;
+        width: 32%;
+        overflow: hidden;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      @mixin atSmall{
+        float: none;
+        width: 100%;
+        margin-bottom: 14px;
+        padding-left: 15px;
+      }
+
+      a {
+        @mixin atMedium{
+          margin-right: 5px;
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: center;
+        }
+        @mixin atSmall{
+          margin: 0;
+          float: left;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    font-size: 2em;
+    position: absolute;
+    padding: 0 15px;
+    border-radius: 4px;
+    top: 15px;
+    right: 10px;
+    @mixin atSmall{
+      display: block;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+/*----headerEND----*/
