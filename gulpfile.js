@@ -9,11 +9,25 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create();
 
 gulp.task('style', function() {
-  return gulp.src('./css/index_main.css').pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer])).pipe(gulp.dest('./'));
+  return gulp.src('./css/style.css').pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer])).pipe(gulp.dest('./'));
+});
+
+gulp.task('cssInject', ['style'], function() {
+  return gulp.src('./style.css').pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: "./"
+    }
+  });
+  watch('./*.html', function() {
+    browserSync.reload();
+  });
   watch('./css', function() {
-    gulp.start('style');
+    gulp.start('cssInject');
+    browserSync.reload();
   });
 });
