@@ -1,4 +1,5 @@
 /*----global----*/
+
 * {
   -border: solid 1px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -17,90 +18,75 @@ body, footer {
   background-color: #FFFAFA;
 }
 
-.common{
-
-  &__row{
+.common {
+  &__row {
     width: 100%;
     margin-right: -20px;
     -margin: 0 auto;
   }
-
-  &__col{
+  &__col {
     padding-left: 20px;
     padding-right: 20px;
     float: left;
-    @mixin atSmall{
+    @mixin atSmall {
       padding-left: 0;
       padding-right: 0;
     }
   }
-
   &__container {
     max-width: 1170px;
     -overflow: auto;
     justify-content: space-around;
     margin: 0 auto;
-
     @mixin atMedium {
       max-width: 768px;
       padding-left: 15px;
       padding-right: 15px;
     }
-
-    @mixin atSmall{
+    @mixin atSmall {
       max-width: 480px;
     }
-
   }
-
 }
 
 .col-sm {
   &-11 {
     width: 91.662%;
   }
-
   &-10 {
     width: 83.332%;
   }
-
   &-9 {
     width: 75%;
   }
-
   &-8 {
     width: 66.662%;
   }
-
   &-7 {
     width: 58.331%;
   }
-
   &-6 {
     width: 50%;
-    @mixin atMedium{
+    @mixin atMedium {
       width: 100%;
     }
   }
-
   &-5 {
     width: 41.662%;
   }
-
   &-4 {
     width: 33.332%;
   }
-
   &-3 {
     width: 25%;
   }
-
   &-2 {
     width: 16.662%;
   }
-
   &-1 {
     width: 8.332%;
   }
 }
+
+
 /*----globalEnd----*/

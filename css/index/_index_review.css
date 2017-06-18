@@ -1,100 +1,89 @@
 /*----歷年回顧----*/
 
-.review_main {
-  margin-bottom: 0px;
+.index__review {
+  &__youtube {}
+  &__youtube {
+    height: 200px;
+    width: 33.332%;
+    background-size: 50% 80%;
+    margin: 0px auto;
+    position: relative;
+  }
+  &__youtube img {
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    height: 80%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+  &__gif {
+    width: 50%;
+    height: 500px;
+    margin: -50px auto;
+    .background-color: #FAE0E0;
+    position: relative;
+    margin-top: -100px;
+  }
+  &__gif__gif1, &__gif__gif2, &__gif__gif3, &__gif__gif4 {
+    width: 50%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: auto;
+  }
+  &__gif__gif1 {
+    float: left;
+    background-image: url("image/GIF1.gif");
+    background-position: bottom;
+  }
+  &__gif__gif2 {
+    float: right;
+    background-image: url("image/GIF3.gif");
+    background-position: bottom;
+  }
+  &__gif__gif3 {
+    float: left;
+    background-image: url("image/GIF4.gif");
+    background-position: top;
+  }
+  &__gif__gif4 {
+    float: right;
+    background-image: url("image/GIF2.gif");
+    background-position: top;
+  }
+  &__flickr {
+    height: 200px;
+    width: 33.332%;
+    margin: 0px auto;
+  }
+  &__flickr img {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    height: 70%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+  &__flickr__animation {
+    margin: 0px auto;
+    height: 450px;
+    position: relative;
+    margin-top: 50px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
+  &__flickr__animation div {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    margin: 0px auto;
+    animation: round 25s linear infinite;
+  }
 }
 
-.index__review__youtube {
-  height: 200px;
-  width: 33.332%;
-  background-size: 50% 80%;
-  margin: 0px auto;
-  position: relative;
-}
-
-.index__review__youtube img {
-  display: block;
-  margin: 0px auto;
-  width: 60%;
-  height: 80%;
-  margin-bottom: 0px;
-  margin-top: 50px;
-}
-
-.index__review__gif {
-  width: 50%;
-  height: 500px;
-  margin: -50px auto;
-  .background-color: #FAE0E0;
-  position: relative;
-  margin-top: -100px;
-}
-
-.index__review__gif__gif1, .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
-  width: 50%;
-  height: 250px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: auto;
-}
-
-.index__review__gif__gif1 {
-  float: left;
-  background-image: url("image/GIF1.gif");
-  background-position: bottom;
-}
-
-.index__review__gif__gif2 {
-  float: right;
-  background-image: url("image/GIF3.gif");
-  background-position: bottom;
-}
-
-.index__review__gif__gif3 {
-  float: left;
-  background-image: url("image/GIF4.gif");
-  background-position: top;
-}
-
-.index__review__gif__gif4 {
-  float: right;
-  background-image: url("image/GIF2.gif");
-  background-position: top;
-}
-
-.index__review__flickr {
-  height: 200px;
-  width: 33.332%;
-  margin: 0px auto;
-}
-
-.index__review__flickr img {
-  display: block;
-  margin: 0px auto;
-  width: 50%;
-  height: 70%;
-  margin-bottom: 0px;
-  margin-top: 50px;
-}
-
-.index__review__flickr__animation {
-  margin: 0px auto;
-  height: 450px;
-  position: relative;
-  margin-top: 50px;
-  overflow: visible;
-  display: flex;
-  justify-content: center;
-}
-
-.index__review__flickr__animation div {
-  position: absolute;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  margin: 0px auto;
-  animation: round 25s linear infinite;
-}
 @keyframes round {
   4% {
     opacity: 1;
@@ -113,24 +102,23 @@
   }
 }
 
-.index__review__flickr__animation div:nth-child(5) {
-  animation-delay: 0s;
-}
+.index__review {
 
-.index__review__flickr__animation div:nth-child(4) {
-  animation-delay: 5s;
-}
-
-.index__review__flickr__animation div:nth-child(3) {
-  animation-delay: 10s;
-}
-
-.index__review__flickr__animation div:nth-child(2) {
-  animation-delay: 15s;
-}
-
-.index__review__flickr__animation div:nth-child(1) {
-  animation-delay: 20s;
+  &__flickr__animation div:nth-child(5) {
+    animation-delay: 0s;
+  }
+  &__flickr__animation div:nth-child(4) {
+    animation-delay: 5s;
+  }
+  &__flickr__animation div:nth-child(3) {
+    animation-delay: 10s;
+  }
+  &__flickr__animation div:nth-child(2) {
+    animation-delay: 15s;
+  }
+  &__flickr__animation div:nth-child(1) {
+    animation-delay: 20s;
+  }
 }
 
 

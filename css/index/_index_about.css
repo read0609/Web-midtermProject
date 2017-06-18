@@ -1,56 +1,75 @@
 /*----index_about----*/
+
 .index__about {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   overflow: auto;
-  @mixin atMedium{
+  @mixin atMedium {
     display: block;
   }
-}
-
-.index__about .col {
-  display: inline-block;
-}
-
-.index__about__square1, .index__about__square2, .index__about__square3, .index__about__square4 {
-  -background-color: #ffe6e6;
-  height: 300px;
-  overflow: hidden;
-  margin-top: 50px;
-  position: relative;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @mixin atMedium{
-    margin-top: 0;
-    margin-bottom: 50px;
+  .index__about .col {
+    display: inline-block;
   }
-}
-
-.index__about__square1 .index_about_square_title, .index__about__square2 .index_about_square_title, .index__about__square3 .index_about_square_title, .index__about__square4 .index_about_square_title {
-  display: inline-block;
-  font-size: 60px;
-  z-index: 15;
-  color: #FFF;
-}
-
-.index__about__square1:hover .index__about__square1__content1, .index__about__square2:hover .index__about__square2__content2, .index__about__square3:hover .index__about__square3__content3, .index__about__square4:hover .index__about__square4__content4 {
-  opacity: 0.9;
-  visibility: visible;
-  z-index: 20;
-}
-
-.index__about__img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  border-radius: 5px;
+  &__square1, &__square2, &__square3, &__square4 {
+    -background-color: #ffe6e6;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @mixin atMedium {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  }
+  &__square1 &__square__title, &__square2 &__square__title, &__square3 &__square__title, &__square4 &__square__title {
+    display: inline-block;
+    font-size: 60px;
+    z-index: 15;
+    color: #FFF;
+  }
+  &__square1:hover &__square1__content1, &__square2:hover &__square2__content2, &__square3:hover &__square3__content3, &__square4:hover &__square4__content4 {
+    opacity: 0.9;
+    visibility: visible;
+    z-index: 20;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  &__square1__content1, &__square2__content2, &__square3__content3, &__square4__content4 {
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    @mixin atSmall {
+      pointer-events: none;
+    }
+  }
+  &__square1__content1 p, &__square2__content2 p, &__square3__content3 p, &__square4__content4 p {
+    padding: 0px;
+    margin: 30px;
+    font-size: 14px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
 }
 
 .index__arr__up1, .index__arr__up2, .index__arr__up3, .index__arr__up4 {
@@ -61,14 +80,14 @@
   width: 50px;
   height: auto;
   display: none;
-  @mixin atSmall{
+  @mixin atSmall {
     display: none;
     cursor: pointer;
   }
 }
 
 .index__arr__down--display {
-  @mixin atSmall{
+  @mixin atSmall {
     display: block;
   }
 }
@@ -81,31 +100,15 @@
   width: 50px;
   height: auto;
   display: none;
-  @mixin atSmall{
+  @mixin atSmall {
     display: block;
     cursor: pointer;
   }
 }
 
 .index__arr__down--hide {
-  @mixin atSmall{
+  @mixin atSmall {
     display: none;
-  }
-}
-
-.index__about__square1__content1, .index__about__square2__content2, .index__about__square3__content3, .index__about__square4__content4 {
-  height: 100%;
-  width: 100%;
-  background-color: #333;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  border-radius: 10px;
-  @mixin atSmall{
-    pointer-events: none;
   }
 }
 
@@ -114,14 +117,3 @@
   visibility: visible;
   z-index: 20;
 }
-
-.index__about__square1__content1 p, .index__about__square2__content2 p, .index__about__square3__content3 p, .index__about__square4__content4 p {
-  padding: 0px;
-  margin: 30px;
-  font-size: 14px;
-  color: white;
-  line-height: 30px;
-  letter-spacing: 2px;
-}
-
-/*----index_aboutEND----*/

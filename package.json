@@ -17,7 +17,8 @@
   "homepage": "https://github.com/read0609/Web-midtermProject#readme",
   "dependencies": {
     "jquery": "^3.2.1",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "save-dev": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
