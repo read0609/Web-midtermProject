@@ -76,6 +76,9 @@ body, footer {
   }
   &-4 {
     width: 33.332%;
+    @mixin atMedium {
+      width: 100%;
+    }
   }
   &-3 {
     width: 25%;

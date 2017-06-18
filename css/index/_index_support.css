@@ -1,20 +1,58 @@
 /*----贊助廠商----*/
 
-.index__support__nine_pic {
+.index__support {
   margin-top: 50px;
-}
+  &__nine_pic__sup1:hover .sup1__data, &__nine_pic__sup2:hover .sup2__data, &__nine_pic__sup3:hover .sup3__data, &__nine_pic__sup4:hover .sup4__data, &__nine_pic__sup5:hover .sup5__data, &__nine_pic__sup6:hover .sup6__data, &__nine_pic__sup7:hover .sup7__data, &__nine_pic__sup8:hover .sup8__data, &__nine_pic__sup9:hover .sup9__data {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  &__nine_pic__sup1, &__nine_pic__sup2, &__nine_pic__sup3, &__nine_pic__sup4, &__nine_pic__sup5, &__nine_pic__sup6, &__nine_pic__sup7, &__nine_pic__sup8, &__nine_pic__sup9 {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 10px;
+  }
+  &__nine_pic__sup1 {
+    background-image: url("image/sup1.png");
+  }
+  &__nine_pic__sup2 {
+    background-image: url("image/sup2.png");
+    background-size: 80%;
+  }
+  &__nine_pic__sup3 {
+    background-image: url("image/sup3.png");
+    background-size: 70%;
+  }
+  &__nine_pic__sup4 {
+    background-image: url("image/sup4.png");
+    background-size: 70%;
+  }
+  &__nine_pic__sup5 {
+    background-image: url("image/sup5.png");
+    background-size: 70%;
+  }
+  &__nine_pic__sup6 {
+    background-image: url("image/sup6.png");
+    background-size: 70%;
+  }
+  &__nine_pic__sup7 {
+    background-image: url("image/sup7.png");
+    background-size: 75%;
+    background-position: center 95px;
+  }
+  &__nine_pic__sup8 {
+    background-image: url("image/sup8.png");
+    background-size: 80%;
+    background-position: center 15px;
+  }
+  &__nine_pic__sup9 {
+    background-image: url("image/sup9.png");
+    background-size: 75%;
+  }
 
-.index__support__nine_pic__sup1:hover .sup1__data,
-.index__support__nine_pic__sup2:hover .sup2__data,
-.index__support__nine_pic__sup3:hover .sup3__data,
-.index__support__nine_pic__sup4:hover .sup4__data,
-.index__support__nine_pic__sup5:hover .sup5__data,
-.index__support__nine_pic__sup6:hover .sup6__data,
-.index__support__nine_pic__sup7:hover .sup7__data,
-.index__support__nine_pic__sup8:hover .sup8__data,
-.index__support__nine_pic__sup9:hover .sup9__data {
-  opacity: 0.9;
-  visibility: visible;
 }
 
 .sup1__data, .sup2__data, .sup3__data, .sup4__data, .sup5__data, .sup6__data, .sup7__data, .sup8__data, .sup9__data {
@@ -29,7 +67,10 @@
   overflow: hidden;
   border-radius: 10px;
 }
-
+.sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
+  opacity: 0.9;
+  visibility: visible;
+}
 .sup1__data p, .sup2__data p, .sup3__data p, .sup4__data p, .sup5__data p, .sup6__data p, .sup7__data p, .sup8__data p, .sup9__data p {
   padding: 0px;
   margin: 30px;
@@ -39,70 +80,6 @@
   letter-spacing: 2px;
 }
 
-.index__support__nine_pic__sup1, .index__support__nine_pic__sup2,
-.index__support__nine_pic__sup3, .index__support__nine_pic__sup4,
-.index__support__nine_pic__sup5, .index__support__nine_pic__sup6,
-.index__support__nine_pic__sup7, .index__support__nine_pic__sup8,
-.index__support__nine_pic__sup9 {
-  width: 100%;
-  position: relative;
-  height: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  margin-bottom: 10px;
-}
-
-.index__support__nine_pic__sup1 {
-  background-image: url("image/sup1.png");
-}
-
-.index__support__nine_pic__sup2 {
-  background-image: url("image/sup2.png");
-  background-size: 80%;
-}
-
-.index__support__nine_pic__sup3 {
-  background-image: url("image/sup3.png");
-  background-size: 70%;
-}
-
-.index__support__nine_pic__sup4 {
-  background-image: url("image/sup4.png");
-  background-size: 70%;
-}
-
-.index__support__nine_pic__sup5 {
-  background-image: url("image/sup5.png");
-  background-size: 70%;
-}
-
-.index__support__nine_pic__sup6 {
-  background-image: url("image/sup6.png");
-  background-size: 70%;
-}
-
-.index__support__nine_pic__sup7 {
-  background-image: url("image/sup7.png");
-  background-size: 75%;
-  background-position: center 95px;
-}
-
-.index__support__nine_pic__sup8 {
-  background-image: url("image/sup8.png");
-  background-size: 80%;
-  background-position: center 15px;
-}
-
-.index__support__nine_pic__sup9 {
-  background-image: url("image/sup9.png");
-  background-size: 75%;
-}
-
-.sup1_data p {
-  margin-top: 50px;
-  font-size: 15px;
-}
 
 
 /*----贊助廠商END----*/
