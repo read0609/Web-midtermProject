@@ -55,6 +55,8 @@
   &__FB{
     border: none;
     overflow: hidden;
+    position: relative;
+    z-index: 20;
   }
 }
 
@@ -69,6 +71,7 @@
   visibility: hidden;
   overflow: hidden;
   border-radius: 10px;
+  z-index: 10;
 
 }
 .sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
