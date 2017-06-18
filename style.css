@@ -1304,29 +1304,42 @@ footer a {
 }
 /*----最新消息END----*/
 /*----歷年回顧----*/
-.index__review__youtube {}
 .index__review__youtube {
-    height: 200px;
     width: 33.332%;
-    background-size: 50% 80%;
+    -background-size: 50% 80%;
     margin: 0px auto;
     position: relative;
+  }
+@media only screen and (max-width: 480px) {
+.index__review__youtube {
+      width: 50%
+  }
   }
 .index__review__youtube img {
     display: block;
     margin: 0px auto;
-    width: 60%;
-    height: 80%;
+    width: 100%;
+    height: auto;
     margin-bottom: 0px;
     margin-top: 50px;
   }
 .index__review__gif {
-    width: 50%;
+    width: 70%;
     height: 500px;
-    margin: -50px auto;
-    .background-color: #FAE0E0;
+    margin: auto;
+    -background-color: #FAE0E0;
     position: relative;
-    margin-top: -100px;
+  }
+@media only screen and (max-width: 768px) {
+.index__review__gif {
+      width: 90%
+  }
+  }
+@media only screen and (max-width: 480px) {
+.index__review__gif {
+      height: 250px;
+      margin-top: -35px
+  }
   }
 .index__review__gif__gif1, .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
     width: 50%;
@@ -1335,6 +1348,14 @@ footer a {
     background-repeat: no-repeat;
     background-size: contain;
     overflow: auto;
+  }
+@media only screen and (max-width: 480px) {
+      .index__review__gif__gif1 .index__review__gif__gif1, .index__review__gif__gif2 .index__review__gif__gif1, .index__review__gif__gif3 .index__review__gif__gif1, .index__review__gif__gif4 .index__review__gif__gif1 {
+        width: 100%;
+      }
+      .index__review__gif__gif1 .index__review__gif__gif2, .index__review__gif__gif1 .index__review__gif__gif3, .index__review__gif__gif1 .index__review__gif__gif4, .index__review__gif__gif2 .index__review__gif__gif2, .index__review__gif__gif2 .index__review__gif__gif3, .index__review__gif__gif2 .index__review__gif__gif4, .index__review__gif__gif3 .index__review__gif__gif2, .index__review__gif__gif3 .index__review__gif__gif3, .index__review__gif__gif3 .index__review__gif__gif4, .index__review__gif__gif4 .index__review__gif__gif2, .index__review__gif__gif4 .index__review__gif__gif3, .index__review__gif__gif4 .index__review__gif__gif4 {
+        display: none;
+      }
   }
 .index__review__gif__gif1 {
     float: left;
@@ -1357,23 +1378,33 @@ footer a {
     background-position: top;
   }
 .index__review__flickr {
-    height: 200px;
-    width: 33.332%;
+    width: 30%;
     margin: 0px auto;
+  }
+@media only screen and (max-width: 480px) {
+.index__review__flickr {
+      width: 45%;
+      margin-top: 90px
+  }
   }
 .index__review__flickr img {
     display: block;
     margin: 0px auto;
-    width: 50%;
-    height: 70%;
+    width: 70%;
+    height: auto;
     margin-bottom: 0px;
     margin-top: 50px;
+  }
+@media only screen and (max-width: 768px) {
+.index__review__flickr img {
+      margin-top: 0;
+      width: 100%
+  }
   }
 .index__review__flickr__animation {
     margin: 0px auto;
     height: 450px;
     position: relative;
-    margin-top: 50px;
     overflow: visible;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1381,6 +1412,13 @@ footer a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 40px;
+  }
+@media only screen and (max-width: 480px) {
+.index__review__flickr__animation {
+      margin-top: 20px;
+      height: 300px
+  }
   }
 .index__review__flickr__animation div {
     position: absolute;
@@ -1443,6 +1481,24 @@ footer a {
 .index__review__flickr__animation div:nth-child(1) {
     -webkit-animation-delay: 20s;
             animation-delay: 20s;
+  }
+@media only screen and (max-width: 768px) {
+  .index__review__flickr__animation div img {
+    width: 100%;
+    height: auto;
+  }
+  }
+@media only screen and (max-width: 480px) {
+  .index__review__flickr__animation div img {
+    width: 100%;
+    height: auto;
+  }
+  .index__review__gif__gif1 {
+    width: 100%;
+  }
+  .index__review__gif__gif2, .index__review__gif__gif3, .index__review__gif__gif4 {
+    display: none;
+  }
   }
 /*----歷年回顧End----*/
 /*----贊助廠商----*/
