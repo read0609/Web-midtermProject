@@ -1509,7 +1509,6 @@ footer a {
 /*----贊助廠商----*/
 .index__support {
   margin-top: 50px;
-
 }
 .index__support__nine_pic__sup1:hover .sup1__data, .index__support__nine_pic__sup2:hover .sup2__data, .index__support__nine_pic__sup3:hover .sup3__data, .index__support__nine_pic__sup4:hover .sup4__data, .index__support__nine_pic__sup5:hover .sup5__data, .index__support__nine_pic__sup6:hover .sup6__data, .index__support__nine_pic__sup7:hover .sup7__data, .index__support__nine_pic__sup8:hover .sup8__data, .index__support__nine_pic__sup9:hover .sup9__data {
     opacity: 0.9;
@@ -1561,17 +1560,22 @@ footer a {
     background-image: url("image/sup9.png");
     background-size: 75%;
   }
+.index__support__FB{
+    border: none;
+    overflow: hidden;
+  }
 .sup1__data, .sup2__data, .sup3__data, .sup4__data, .sup5__data, .sup6__data, .sup7__data, .sup8__data, .sup9__data {
   height: 100%;
   width: 100%;
   background-color: #333;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
   border-radius: 10px;
+
 }
 .sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
   opacity: 0.9;

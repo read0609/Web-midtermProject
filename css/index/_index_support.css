@@ -52,7 +52,10 @@
     background-image: url("image/sup9.png");
     background-size: 75%;
   }
-
+  &__FB{
+    border: none;
+    overflow: hidden;
+  }
 }
 
 .sup1__data, .sup2__data, .sup3__data, .sup4__data, .sup5__data, .sup6__data, .sup7__data, .sup8__data, .sup9__data {
@@ -60,12 +63,13 @@
   width: 100%;
   background-color: #333;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
   border-radius: 10px;
+
 }
 .sup1__data--display, .sup2__data--display, .sup3__data--display, .sup4__data--display, .sup5__data--display, .sup6__data--display, .sup7__data--display, .sup8__data--display, .sup9__data--display {
   opacity: 0.9;
