@@ -12,7 +12,7 @@ gulp.task('style', function() {
   return gulp.src('./css/style.css').pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer])).pipe(gulp.dest('./'));
 });
 
-gulp.task('cssInject', ['style'], function() {
+gulp.task('cssInjectStyle', ['style'], function() {
   return gulp.src('./style.css').pipe(browserSync.stream());
 });
 
@@ -27,7 +27,7 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
   watch('./css', function() {
-    gulp.start('cssInject');
+    gulp.start('cssInjectStyle');
     browserSync.reload();
   });
 });

@@ -1,0 +1,16 @@
+/*----_index_signIn----*/
+
+.index__signIn{
+  margin: 100px auto;
+  height: 200px;
+}
+
+.index__signIn__form{
+  margin:20px 0;
+}
+
+.index__signIn__btn{
+  margin:20px 0;
+}
+
+/*----_index_signUpEND----*/

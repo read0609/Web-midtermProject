@@ -1,0 +1,46 @@
+.backstage__user__common__list{
+  width: 330px;
+  margin: 0px;
+  margin-top: 30px;
+}
+.backstage__user__common__list__title{
+  width: 330px;
+  background-color: #373A3F;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+.backstage__user__common__list__title p{
+  margin: 0px;
+  font-size: 25px;
+  font-family: Microsoft JhengHei;
+}
+.backstage__user__common__list__choice{
+  width: 330px;
+  margin: 0px;
+  text-align: center;
+}
+.backstage__user__common__list__choice__title{
+  width: 330px;
+  text-decoration: none;
+  display:block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family:Microsoft JhengHei;
+  color: black;
+  Xbackground-color:#E8C547;
+  background-color: #FFEDAB;
+}
+.backstage__user__common__list__choice__title:hover{
+  position:relative;
+  top:2px;
+  left:2px;
+}
+.backstage__user__common__FB,.backstage__user__common__youtube{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+*{
+  Xborder: 1px solid black;
+}

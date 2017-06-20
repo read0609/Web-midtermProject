@@ -1,0 +1,44 @@
+p{
+  margin: 0px;
+}
+.backstage__user__data__person{
+  float: right;
+  width: 780px;
+  display: block;
+}
+.backstage__user__data__person__title{
+  background-color: #373A3F;
+  color: white;
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+}
+.backstage__user__data__person__list{
+  display:inline-block;
+  width: 25%;
+  margin: 20px 0px 0px 0px;
+  text-align: right;
+}
+.backstage__user__data__person__list__box{
+  border:#373A3F 1px solid;
+  height: 25px;
+  display:inline;
+  margin: 14px 100px 0px 0px;
+  float: right;
+  width: 50%;
+  background-color: white;
+}
+.backstage__user__data__person__list__button {
+  Xmargin-left: 600px;
+  margin-top: 50px;
+  text-align: center;
+}
+.backstage__user__data__person__list__button a{
+  text-decoration: none;
+  border:#1D3461 1px solid;
+  padding: 5px;
+  color: black;
+}
+.backstage__user__data__person__list__button a:hover {
+  background-color: #373A3F;
+  color: white;
+}
