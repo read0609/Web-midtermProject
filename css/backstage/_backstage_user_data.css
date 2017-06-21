@@ -19,7 +19,7 @@ p{
   text-align: right;
 }
 .backstage__user__data__person__list__box{
-  border:#373A3F 1px solid;
+  //border:#373A3F 1px solid;
   height: 25px;
   display:inline;
   margin: 14px 100px 0px 0px;

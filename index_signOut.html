@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>歷年回顧｜赤弦獎</title>
+  <title>登入介面｜赤弦獎</title>
   <link rel="stylesheet" href="style.css">
   <script src="JS/jquery-3.2.1.min.js"></script>
   <meta charset="UTF-8">
@@ -20,8 +20,8 @@
         <li><a href="index_review.html">歷年回顧</a></li>
         <li><a href="index_support.html">贊助廠商</a></li>
         <li><a href="index.html">聯絡我們</a></li>
-        <li><a href="index_signIn.html">使用者登入</a></li>
-        <li><a href="index_signUp.html">註冊</a></li>      
+        <li><a href="backstage_user_data.html">使用者後台</a></li>
+        <li><a href="index_signOut.html">登出</a></li>
       </ul>
       <!--header__nav-->
     </div>
@@ -34,49 +34,18 @@
   </div>
 
   <div class="common__container">
-    <div class="index__review">
-      <div class="index__review__youtube">
-        <a href="https://www.youtube.com/channel/UC-Hli420M0wsee1Lo_dBpYQ/feed"><img src="image/youtube.png"></a>
-      </div>
-      <!--index__review__youtube-->
-      <div class="index__review__gif">
-        <div class="index__review__gif__gif1"></div>
-        <div class="index__review__gif__gif2"></div>
-        <div class="index__review__gif__gif3"></div>
-        <div class="index__review__gif__gif4"></div>
-      </div>
-      <!--index__review__gif-->
-      <div class="index__review__flickr">
-        <a href="https://www.flickr.com/photos/138430167@N06/albums"><img src="image/flickr.png"></a>
-      </div>
-      <!--index__review__flickr-->
-      <div class="index__review__flickr__animation">
-        <div>
-          <img src="image/flickr1.jpg" alt="pure css3 slider1" />
-        </div>
-        <div>
-          <img src="image/flickr2.jpg" alt="pure css3 slider2" />
-        </div>
-        <div>
-          <img src="image/flickr3.jpg" alt="pure css3 slider3" />
-        </div>
-        <div>
-          <img src="image/flickr4.jpg" alt="pure css3 slider4" />
-        </div>
-        <div>
-          <img src="image/flickr5.jpg" alt="pure css3 slider5" />
-        </div>
-      </div>
-      <!--index__review__flickr__animation-->
+    <div class="index__signOut">
+      <button class="index__signOut__btn" id="btn_signOut">
+            Sign Out
+      </button>
     </div>
-    <!--index__review-->
   </div>
   <!--common__container-->
 
   <footer>
     <div class="common__container">
       <div class="footer__footerLeft">
-        <p><a href="index_review.html">↑ top</a></p>
+        <p><a href="index_signOut.html">↑ top</a></p>
         <div class="line2"></div>
         <p><a href="index.html">home</a></p>
       </div>
@@ -98,6 +67,6 @@
     </div>
   </footer>
 </body>
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script type="text/javascript" src="JS/index_signOut.js"></script>
 <script type="text/javascript" src="JS/script.js"></script>
-
-</html>

@@ -11,7 +11,7 @@ $(document).ready(function() {
   firebase.initializeApp(config);
 
   var dbUser = firebase.database().ref().child('user');
-  const GroupNum = $('#UserGroup').Group.value;
+  const GroupNum = $('#UserGroup')[0].Group.value;
   const $password = $('#pw');
   const $email = $('#email');
   const $GroupName = $('#GroupName');
