@@ -9,10 +9,10 @@
 }
 .index_picture_one_part_one{
   display: inline-block;
-  width: 80%;
+  -width: 80%;
   height: 400;
   float: left;
-  margin-left: 50px;
+  -margin-left: 50px;
   @mixin atLarge{
     display: inline-block;
     width: 80%;
@@ -113,14 +113,14 @@
   transform: scale(0.8);
 }
 .index_picture_one_button{
-  display:block;
-  width: 10%;
+  display: block;
+  width: 120px;
   height: 30px;
   margin-left: 430px;
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  padding-left:20px;
+  padding-left: 20px;
   padding-top: 3px;
   font-size: 15px;
   @mixin atLarge{
@@ -341,3 +341,22 @@
   margin-top: 50px;
 }
 /*----最新消息END----*/
+.header__home__page{
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  overflow: auto;
+  @mixin atMedium{
+    height: auto;
+  }
+}
+.index__majorPic__home__page{
+  & img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+}

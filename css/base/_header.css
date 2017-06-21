@@ -10,9 +10,9 @@
 
   @mixin atMedium{
     overflow: visible;
-    height: 180px;
+    height: 200px;
   }
-  
+
   @mixin atSmall{
     height: auto;
   }
@@ -22,6 +22,7 @@
     float: left;
     color: #EEE;
     font-family: Microsoft JhengHei;
+    line-height: 50px;
 
     @mixin atMedium{
       width: auto;
@@ -71,7 +72,7 @@
       display: inline-block;
       font-family: Arial;
       margin-top: 40px;
-      margin-left: 40px;
+      margin-left: 25px;
       @mixin atMedium{
         margin: 0;
         width: 32%;
